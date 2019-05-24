@@ -1,0 +1,3359 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+<title>Index.hr</title>
+
+<meta name="description" content="Index.hr - Nezavisni hrvatski news i lifestyle portal - Pro&#x10D;itajte najnovije vijesti, sportske novosti, i vijesti iz svijeta zabave">
+<meta property="fb:app_id" content="216060115209819">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Rubik:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+<script src="/Scripts/jquery-3.1.1.min.js"></script>
+<script src="/Scripts/crawler.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.6.1/fingerprint2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone-with-data.js"></script>
+<script src="//content.jwplatform.com/libraries/YlqrAqay.js"></script>
+<link href="/Content/desktop-bundle.min.css?v=o-FrKpRRsVmlRkYPyNFIzI4uh-_jz0uYbf7Kv6sxTOE" rel="stylesheet" />
+<script src="/Scripts/desktop-bundle.min.js?v=bb73Wn-uKyrULoMD_LY4PNybIML1rDUzgmSupgcrfQ4"></script>
+
+<script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-2490832-1', 'auto');
+    </script>
+
+
+<script src="/Scripts/prebid2.9.0.js"></script>
+
+<script src='https://cdn.connectad.io/connectmyusers.js'></script>
+<script>
+    var adUnits = [];
+
+    //DBFF1
+    adUnits.push({
+        code: 'google-DBFF1',
+        mediaTypes: {
+            banner: {
+                sizes: [[970, 250]]
+            }
+        },
+
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1302998"
+            }
+        },
+        {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '1040890'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+
+                siteId: '296764',
+                size: [970, 250]
+            }
+        },
+        {
+            bidder: "appnexus",
+            params: {
+                placementId: "13862024"
+            }
+        },
+        {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046838',
+                formatId: '75464'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586162'
+            }
+        }]
+    });
+
+    //DF4
+    adUnits.push({
+        code: 'DF4',
+        mediaTypes: {
+            banner: {
+                sizes: [[300, 250]]
+            }
+        },
+
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1209247"
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '918696'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+
+                siteId: '268218',
+                size: [300, 250]
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13192125"
+            }
+        }, {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046806',
+                formatId: '75463'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586140'
+            }
+        }]
+    });
+
+    //DF5
+    adUnits.push({
+        code: 'DF5-large',
+        mediaTypes: {
+            banner: {
+                sizes: [[300, 250], [300, 600]]
+            }
+        },
+
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1209248"
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '918704'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+                siteId: '268219',
+                size: [300, 250]
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+                siteId: '268219',
+                size: [300, 600]
+            }
+        },
+        {
+            bidder: "appnexus",
+            params: {
+                placementId: "13192127"
+            }
+        },
+        {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046807',
+                formatId: '75463'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586141'
+            }
+        }]
+    });
+
+    adUnits.push({
+        code: 'google-dfft1',
+        mediaTypes: {
+            banner: {
+                sizes: [[300, 250], [300, 600]]
+            }
+        },
+
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1270275"
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+
+                siteId: '283918',
+                size: [300, 250]
+            }
+        },
+        {
+            bidder: 'ix',
+            params: {
+
+                siteId: '283918',
+                size: [300, 600]
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '1009714'
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13663913"
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13663932"
+            }
+        }, {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046815',
+                formatId: '75463'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586163'
+            }
+        }]
+    });
+
+    adUnits.push({
+        code: 'google-dfft2',
+        sizes: [[300, 250], [300, 600]],
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1270277"
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+
+                siteId: '283919',
+                size: [300, 250]
+            }
+        },
+        {
+            bidder: 'ix',
+            params: {
+
+                siteId: '283919',
+                size: [300, 600]
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '1009716'
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13663940"
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13663942"
+            }
+        }, {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046816',
+                formatId: '75463'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586164'
+            }
+        }]
+    });
+
+    //DB2
+    adUnits.push({
+        code: 'DB2',
+        mediaTypes: {
+            banner: {
+                sizes: [[970, 250]]
+            }
+        },
+
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1303003"
+            }
+        },
+        {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '1040768'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+
+                siteId: '296767',
+                size: [970, 250]
+            }
+        },
+        {
+            bidder: "appnexus",
+            params: {
+                placementId: "13862057"
+            }
+        }, {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046839',
+                formatId: '75464'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586165'
+            }
+        }]
+    });
+
+
+    //DB3
+    adUnits.push({
+        code: 'DB3',
+        mediaTypes: {
+            banner: {
+                sizes: [[970, 250]]
+            }
+        },
+
+        bids: [{
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046840',
+                formatId: '75464'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586166'
+            }
+        }]
+    });
+
+
+    //DB4
+    adUnits.push({
+        code: 'DB4',
+        sizes: [[970, 250]],
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1209249"
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '918712'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+                size: [970, 250],
+                siteId: '268220'
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13192129"
+            }
+        },
+        {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046830',
+                formatId: '75464'
+            }
+        }, {
+            bidder: 'sovrn',
+            params: {
+                tagid: '586142'
+            }
+        }]
+    });
+
+    //DB5
+    adUnits.push({
+        code: 'DB5',
+        sizes: [[970, 250]],
+        bids: [{
+            bidder: "criteo",
+            params: {
+                zoneId: "1209249"
+            }
+        }, {
+            bidder: 'rubicon',
+            params: {
+                accountId: '16666',
+                siteId: '141496',
+                zoneId: '918712'
+            }
+        }, {
+            bidder: 'ix',
+            params: {
+                size: [970, 250],
+                siteId: '268220'
+            }
+        }, {
+            bidder: "appnexus",
+            params: {
+                placementId: "13192129"
+            }
+        },
+        {
+            bidder: 'connectad',
+            params: {
+                networkId: '10047',
+                siteId: '1028107'
+            }
+        }, {
+            bidder: 'smartadserver',
+            params: {
+                domain: 'https://prg.smartadserver.com',
+                siteId: '286000',
+                pageId: '1046831',
+                formatId: '75464'
+            }
+        }]
+    });
+</script>
+
+<script>
+    var PREBID_TIMEOUT = 1000;
+    var FAILSAFE_TIMEOUT = 3000;
+    var CURRENCY_RATE = 0.87;
+    var pbjs = pbjs || {};
+
+    pbjs.que = pbjs.que || [];
+
+    var adUnits = adUnits || [];
+
+    pbjs.bidderSettings = {
+        rubicon: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        criteo: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        ix: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        appnexus: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        connectad: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        smartadserver: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        },
+        sovrn: {
+            bidCpmAdjustment: function (bidCpm) {
+                return bidCpm * CURRENCY_RATE;
+            }
+        }
+    };
+
+    const customPrebidGranularity = {
+        "buckets": [
+            {
+                "min": 0,
+                "max": 100,
+                "increment": 0.1
+            }
+        ]
+    };
+    pbjs.setConfig({
+        //debug: true,
+        userSync: {
+            filterSettings: {
+                iframe: {
+                    bidders: '*',      // '*' represents all bidders
+                    filter: 'include'
+                }
+            }
+        },
+        priceGranularity: customPrebidGranularity,
+        enableSendAllBids: true
+    });
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function () {
+        googletag.pubads().disableInitialLoad();
+    });
+
+    pbjs.que.push(function () {
+
+        pbjs.addAdUnits(adUnits);
+        pbjs.requestBids({
+            bidsBackHandler: sendAdserverRequest,
+            timeout: PREBID_TIMEOUT
+        });
+    });
+
+
+
+    function sendAdserverRequest() {
+        if (pbjs.adserverRequestSent) return;
+        pbjs.adserverRequestSent = true;
+        googletag.cmd.push(function () {
+            pbjs.que.push(function () {
+
+                var pbInterval = setInterval(function () {
+
+
+                    if (googletag.pubads().getSlots().length > 0) {
+                        clearInterval(pbInterval);
+                        pbjs.setTargetingForGPTAsync();
+
+                        googletag.pubads().refresh();
+                    }
+
+                }, 100);
+            });
+        });
+    }
+
+    // in case PBJS doesn't load
+    setTimeout(function () {
+        sendAdserverRequest();
+    }, FAILSAFE_TIMEOUT);
+
+</script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+<script>
+        var dayNight = moment().hour() < 6 ? "night" : "day";
+
+        googletag.cmd.push(function () {
+            
+
+            googletag.defineSlot('/21703950087/1x1_cijeli_index', [1, 1], 'div-gpt-ad-1535635144958-0').addService(googletag.pubads());
+            googletag.defineSlot('/21703950087/1x1_test', [1, 1], 'div-gpt-ad-1542708593084-0').addService(googletag.pubads());
+
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().setTargeting('day/night', dayNight);
+            googletag.pubads().setTargeting('referer', '');
+
+            googletag.enableServices();
+        });
+    </script>
+<script type='text/javascript' src='//static.criteo.net/js/ld/publishertag.js'></script>
+
+<script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 447571, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+<script type='text/javascript'>
+        window.apd_options = { 'websiteId': 7278, 'runFromFrame': false };
+        (function () {
+            var w = window.apd_options.runFromFrame ? window.top : window;
+            if (window.apd_options.runFromFrame && w != window.parent) w = window.parent;
+            if (w.location.hash.indexOf('apdAdmin') != -1) { if (typeof (Storage) !== 'undefined') { w.localStorage.apdAdmin = 1; } }
+            var adminMode = ((typeof (Storage) == 'undefined') || (w.localStorage.apdAdmin == 1));
+            w.apd_options = window.apd_options;
+            var apd = w.document.createElement('script'); apd.type = 'text/javascript'; apd.async = true;
+            apd.src = '//' + (adminMode ? 'cdn' : 'ecdn') + '.firstimpression.io/' + (adminMode ? 'fi.js?id=' + window.apd_options.websiteId : 'fi_client.js');
+            var s = w.document.getElementsByTagName('head')[0]; s.appendChild(apd);
+        })();</script>
+
+</head>
+<body>
+
+<div id='div-gpt-ad-1535635144958-0' style='height:1px; width:1px; position: absolute;'>
+<script>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1535635144958-0'); });
+    </script>
+</div>
+
+<div id='div-gpt-ad-1542708593084-0' style='height:1px; width:1px; position: absolute;'>
+<script>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1542708593084-0'); });
+    </script>
+</div>
+<div class="cookie-consent-container">
+<div class="main-container flex">
+<div class="description">
+U skladu s novom europskom regulativom, Index.hr je nadogradio politiku privatnosti i korištenja kolačića.
+Kolačiće upotrebljavamo kako bismo vam omogućili korištenje naše online usluge, što bolje korisničko iskustvo i funkcionalnost naših web stranica,
+prikaz reklamnih sadržaja i ostale funkcionalnosti koje inače ne bismo mogli pružati.
+Daljnjim korištenjem naše web stranice, suglasni ste s korištenjem kolačića. <a href="/cookie-consent">Više informacija</a>
+</div>
+<div class="btn-agree main-bg main-bg-hover" onclick="closeCookieConsent()">Razumijem</div>
+</div>
+</div>
+<script>
+        function closeCookieConsent() {
+            $('.cookie-consent-container').remove();
+            ga('send', 'event', "cookie_consent");
+        }
+    </script>
+<div id="fb-root"></div>
+<script>
+        var finished_rendering = function () {
+            $(".fb-loader").addClass("display-none");
+        }
+
+        window.fbAsyncInit = function () {
+            FB.Event.subscribe('xfbml.render', finished_rendering);
+        };
+
+        (function (d, s, id) {
+            var js;
+            const fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/hr_HR/sdk.js#xfbml=1&version=v2.10&appId=216060115209819";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+<div class="top-pusher display-none">
+<div class="video-controls-holder display-none">
+<div class="bounce-holder">
+<div class="desc">SPUSTI ZA SADRŽAJ</div>
+<img src="/Content/img/ban/scroll.png" />
+</div>
+<div class="video-controls">
+<div class="video-play-controls">
+<div class="video-pause"><img src="/Content/img/ban/pause.png" /></div>
+<div class="video-play display-none"><img src="/Content/img/ban/play.png" /></div>
+</div>
+<div>
+<div class="video-sound-off"><img src="/Content/img/ban/sound-off.png" /></div>
+<div class="video-sound-on display-none"><img src="/Content/img/ban/sound-on.png" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-container no-padding main-content-bg">
+<div id='crt-1130728' style="width:728px;height:90px;" class="ad-ocean-billboard top"></div>
+<script>
+            var Criteo = Criteo || {};
+            Criteo.events = Criteo.events || [];
+            Criteo.events.push(function () {
+                Criteo.DisplayAcceptableAdIfAdblocked({
+                    "zoneid": 1130728,
+                    "containerid": "crt-1130728",
+                    "overrideZoneFloor": false
+                });
+            });
+            window.addEventListener("message", function (e) {
+                if (e.origin == (location.protocol == 'https:' ? 'https://' : 'http://') + 'cas.criteo.com' && e.data == 'passback-1130728') {
+                    document.getElementById("crt-1130728").style.display = "none";
+                } else {
+                    return;
+                }
+            }, false);
+        </script>
+<div class="ad-ocean-billboard top">
+<div id="adoceanhruajlfkrhua"></div>
+</div>
+<div class="ad-ocean-wallpaper">
+<div id="adoceanhrplreimdufp"></div>
+</div>
+<div class="ad-ocean-wallpaper">
+<div id="adoceanhrwiplhodgbo"></div>
+</div>
+</div>
+<header class="main-menu-container">
+<div class="float-menu no-height" menu-fix-top>
+<div class="main-container no-height clearfix">
+<div class="main-menu no-height">
+<h1 class="logo vijesti-bg">
+<a class="home-btn homepage-link" href="/" title="index.hr"> </a>
+<img class="main" src="/Content/img/logo/index_main.svg" alt="index.hr" />
+<img class="small" src="/Content/img/logo/paprika_logo.svg" alt="index.hr" />
+</h1>
+<nav class="menu-holder clearfix">
+<ul>
+<li><a class="main-text-hover no-drop main-text" href="/"> Naslovnica</a></li>
+<li>
+<a class="vijesti-text-hover vijesti-text " href="/vijesti">
+Vijesti
+</a>
+</li>
+<li>
+<a class="sport-text-hover  " href="/sport">
+Sport
+</a>
+</li>
+<li>
+<a class="magazin-text-hover  " href="/magazin">
+Magazin
+</a>
+</li>
+<li>
+<a class="oglasi-text-hover  " href="http://www.index.hr/oglasi/">
+Oglasi
+</a>
+</li>
+<li class="menu-ostalo">
+<span class="expandable">Ostalo</span>
+<ul class="dropdown-content ostalo display-none">
+<li class="video-bg-hover">
+<a href="/video">Video</a>
+</li>
+<li class="lajkhr-bg-hover">
+<a href="http://www.index.hr/lajk/">Lajk.hr</a>
+</li>
+<li class="rouge-bg-hover">
+<a href="/rouge">Rouge</a>
+</li>
+<li class="auto-bg-hover">
+<a href="/auto">Auto</a>
+</li>
+<li class="mame-bg-hover">
+<a href="/mame">Mame</a>
+</li>
+<li class="ljubimci-bg-hover">
+<a href="/ljubimci">Ljubimci</a>
+</li>
+<li class="fit-bg-hover">
+<a href="/fit">Fit</a>
+</li>
+<li class="main-bg-hover">
+<a href="http://www.index.hr/indexforum/">Forum</a>
+</li>
+<li class="main-bg-hover">
+<a href="/info/tecaj">Te&#x10D;aj</a>
+</li>
+<li class="main-bg-hover">
+<a href="/info/tv">TV program</a>
+</li>
+<li class="main-bg-hover">
+<a href="/info/kino">Kino</a>
+</li>
+<li class="main-bg-hover">
+<a href="/info/vrijeme">Vrijeme</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="right-part">
+<li><a href="https://www.facebook.com/index.hr/" target="_blank"><i class="index-facebook"></i></a></li>
+<li><a href="/trazi.aspx" class="btn-open-search"><i class="index-magnifier"></i></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+
+<div class="main-container homepage main-content-bg">
+<div class="ad-ocean-billboard homepage-billboard">
+<div id="adoceanhrshikfvduhq"></div>
+</div>
+<div class="main-category-header" data-category-change="vijesti">
+<div class="main-category-navigation scroll-menu-arrows-holder">
+<ul class="scroll-menu">
+<li class="root-category"><a class="vijesti-text magazin-text-hover" href="/vijesti">Vijesti</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/hrvatska/22.aspx">Hrvatska</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/zagreb/1553.aspx">Zagreb</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/regija/1540.aspx">Regija</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/eu/5040.aspx">EU</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/svijet/23.aspx">Svijet</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/znanost/1722.aspx">Znanost</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/crna-kronika/46.aspx">Crna kronika</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/komentari/1413.aspx">Komentari</a></li>
+<li class="scroll-menu-item"><a class="vijesti-text-hover" href="/vijesti/rubrika/novac/1554.aspx">Novac</a></li>
+</ul>
+<div class="scroll-menu-arrows display-none">
+<div class="navigation-arrow left-arrow disabled vijesti-text-hover"><i class="index-arrow-left"></i></div>
+<div class="navigation-arrow right-arrow disabled vijesti-text-hover"><i class="index-arrow-right"></i></div>
+</div>
+</div>
+</div>
+<div class="main-category-container flex">
+<div class="main-category-holder">
+<div class="top-box-holder flex">
+<div class="left-part">
+<div class="first-news">
+<div class="scale-img-hover">
+<a class="vijesti-text-hover" href="/vijesti/clanak/sinoc-je-poginula-curica-u-zagrebu-bi-li-je-spasili-lezeci-policajci/2088004.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Sino&#x107; je poginula curica u Zagrebu. Bi li je spasili le&#x17E;e&#x107;i policajci?" src="https://ip.index.hr/remote/indexnew.s3.index.hr/fgnbdnfnfgnfff.jpg?width=488&height=268&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg vijesti-bg"></div>
+</div>
+</div>
+<h2 class="title">Sinoć je poginula curica u Zagrebu. Bi li je spasili ležeći policajci?</h2>
+</a>
+</div>
+<div class="summary">SINO&#x106; je u zagreba&#x10D;kom naselju Blato pod naletom BMW-a poginula djevoj&#x10D;ica.</div>
+</div>
+<div class="home-related-holder">
+<h3 class="main-title">Vezane vijesti</h3>
+<ul>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/mjestani-zapalili-svijece-ispred-kuce-curice-koja-je-sinoc-poginula-u-zagrebu/2088050.aspx">
+<h3 class="title">Mještani zapalili svijeće ispred kuće curice koja je sinoć poginula u Zagrebu</h3>
+</a>
+</li>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/pocelo-postavljanje-lezecih-policajaca-na-mjestu-gdje-je-poginula-djevojcica/2087971.aspx">
+<h3 class="title">Počelo postavljanje ležećih policajaca na mjestu gdje je poginula djevojčica</h3>
+</a>
+</li>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/otac-poginule-curice-dojurio-je-velikom-brzinom-uzeo-mi-je-cijeli-zivot/2087941.aspx">
+<h3 class="title">Otac poginule curice: Dojurio je velikom brzinom. Uzeo mi je cijeli život</h3>
+</a>
+</li>
+</ul>
+</div> <div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2088004">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a href="/vijesti/clanak/sinoc-je-poginula-curica-u-zagrebu-bi-li-je-spasili-lezeci-policajci/2088004.aspx#comments-container" class="fb-comments" data-facebook-url="https://www.index.hr/clanak.aspx?id=2088004">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+</div>
+<div class="right-part">
+<div class="second-news-holder">
+<a class="vijesti-text-hover scale-img-hover" href="/vijesti/clanak/evo-koje-je-tvrtke-zabranila-kina-prije-nego-sto-je-amerika-zabranila-huawei/2087609.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Evo koje je tvrtke zabranila Kina (prije nego &#x161;to je Amerika zabranila Huawei)" src="https://ip.index.hr/remote/indexnew.s3.index.hr/kinasad1200px2.jpg?width=325&height=170&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg vijesti-bg"></div>
+</div>
+</div>
+<h2 class="title vijesti-text-hover">Evo koje je tvrtke zabranila Kina (prije nego što je Amerika zabranila Huawei)</h2>
+</a>
+</div>
+<div class="other-news-holder">
+<ul>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/branko-segon-bivsem-konobaru-mora-isplatiti-300000-kuna/2088045.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Branko &#x160;egon biv&#x161;em konobaru mora isplatiti 300.000 kuna" src="https://ip.index.hr/remote/indexnew.s3.index.hr/segon.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Branko Šegon bivšem konobaru mora isplatiti 300.000 kuna</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/u-pozaru-u-indiji-poginulo-19-ljudi-ucenici-skakali-sa-zgrade/2088060.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="U po&#x17E;aru u Indiji poginulo 19 ljudi, u&#x10D;enici skakali sa zgrade" src="https://ip.index.hr/remote/indexnew.s3.index.hr/pozar-indija-yt.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">U požaru u Indiji poginulo 19 ljudi, učenici skakali sa zgrade</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/muskarca-iz-zapresica-uhvatili-s-01-gramom-marihuane-osudjen-je/2088056.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Mu&#x161;karca iz Zapre&#x161;i&#x107;a uhvatili s 0,1 gramom marihuane. Osu&#x111;en je" src="https://ip.index.hr/remote/indexnew.s3.index.hr/hjmghmghhh.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Muškarca iz Zaprešića uhvatili s 0,1 gramom marihuane. Osuđen je</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="vijesti-text-hover scale-img-hover flex" href="/vijesti/clanak/13-ozlijedjenih-u-eksploziji-u-lyonu-policija-trazi-bombasa/2088049.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="13 ozlije&#x111;enih u eksploziji u Lyonu, policija tra&#x17E;i bomba&#x161;a" src="https://ip.index.hr/remote/indexnew.s3.index.hr/ghfnghnghh.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg vijesti-bg"></div>
+</div>
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">13 ozlijeđenih u eksploziji u Lyonu, policija traži bombaša</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="featured-container main-content-bg">
+<h2 class="main-title"><span>Teme i komentari</span></h2>
+<div class="flex">
+<div class="featured-item">
+<a class="vijesti-text-hover scale-img-hover tag-item">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/VladoMatijanicnova.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic vijesti-text">KOMENTARI VLADIMIRA MATIJANI&#x106;A</div>
+</a>
+<div>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/po-cemu-je-skoro-losiji-od-kolinde-mesica-i-tudjmana/2087985.aspx">
+<h3 class="title">Po &#x10D;emu je &#x160;koro lo&#x161;iji od Kolinde, Mesi&#x107;a i Tu&#x111;mana?</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/maturanti-koji-urlaju-ajmo-ustase-neodoljivo-podsjecaju-na-karla-resslera/2087456.aspx">
+<h3 class="title">Maturanti koji urlaju &quot;ajmo usta&#x161;e&quot; neodoljivo podsje&#x107;aju na Karla Resslera</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/kako-bozinovicevi-i-plenkovicevi-zandari-utjeruju-strah-od-kritiziranja-tudjmana/2085743.aspx">
+<h3 class="title">Kako Bo&#x17E;inovi&#x107;evi i Plenkovi&#x107;evi &#x17E;andari utjeruju strah od kritiziranja Tu&#x111;mana</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="vijesti-text-hover scale-img-hover tag-item" href="/tag/340726/brexit.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/brexit__3__.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic vijesti-text">BREXIT</div>
+</a>
+<div>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/boris-johnson-posao-sljedeceg-premijera-je-da-britanija-izadje-iz-eua/2088059.aspx">
+<h3 class="title">Boris Johnson: Posao sljede&#x107;eg premijera je da Britanija iza&#x111;e iz EU-a</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/novi-sef-britanskih-konzervativaca-bit-ce-izabran-za-dva-mjeseca/2087997.aspx">
+<h3 class="title">Novi &#x161;ef britanskih konzervativaca bit &#x107;e izabran za dva mjeseca</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/reakcije-na-ostavku-britanske-premijerke-therese-may/2087994.aspx">
+<h3 class="title">Reakcije na ostavku britanske premijerke Therese May</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="vijesti-text-hover scale-img-hover tag-item" href="/tag/82525/huawei.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/Untitled-9sdas.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic vijesti-text">RAT PROTIV HUAWEIJA</div>
+</a>
+<div>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/sef-huaweija-svojoj-obitelji-kupio-iphone-mobitele/2088023.aspx">
+<h3 class="title">&#x160;ef Huaweija svojoj obitelji kupio iPhone mobitele</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/trump-huawei-je-opasnost-ali-posluzit-ce-za-pregovore-s-kinom/2087859.aspx">
+<h3 class="title">Trump: Huawei je opasnost, ali poslu&#x17E;it &#x107;e za pregovore s Kinom</h3>
+</a>
+<a class="vijesti-text-hover related-item" href="/vijesti/clanak/madjarski-ministar-optuzuje-zapad-europe-i-brani-upotrebu-huaweija/2087807.aspx">
+<h3 class="title">Ma&#x111;arski ministar optu&#x17E;uje zapad Europe i brani upotrebu Huaweija</h3>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cube-big-holder media-1024">
+<div class="cube-big-top-part">
+<div class="cube-big-mainnews-holder">
+<div class="scale-img-hover">
+<a class="vijesti-text-hover" href="/vijesti/clanak/sinoc-je-poginula-curica-u-zagrebu-bi-li-je-spasili-lezeci-policajci/2088004.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Sino&#x107; je poginula curica u Zagrebu. Bi li je spasili le&#x17E;e&#x107;i policajci?" src="https://ip.index.hr/remote/indexnew.s3.index.hr/fgnbdnfnfgnfff.jpg?width=688&height=363&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg vijesti-bg"></div>
+</div>
+</div>
+<h2 class="title">Sinoć je poginula curica u Zagrebu. Bi li je spasili ležeći policajci?</h2>
+</a>
+</div>
+<div class="summary">SINO&#x106; je u zagreba&#x10D;kom naselju Blato pod naletom BMW-a poginula djevoj&#x10D;ica.</div>
+<div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2088004">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a class="fb-comments" href="/vijesti/clanak/sinoc-je-poginula-curica-u-zagrebu-bi-li-je-spasili-lezeci-policajci/2088004.aspx#comments-container" data-facebook-url="https://www.index.hr/clanak.aspx?id=2088004">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="vijesti-text-hover scale-img-hover" href="/vijesti/clanak/evo-koje-je-tvrtke-zabranila-kina-prije-nego-sto-je-amerika-zabranila-huawei/2087609.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Evo koje je tvrtke zabranila Kina (prije nego &#x161;to je Amerika zabranila Huawei)" src="https://ip.index.hr/remote/indexnew.s3.index.hr/kinasad1200px2.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg vijesti-bg"></div>
+</div>
+</div>
+<h3 class="vijesti-text-hover title">Evo koje je tvrtke zabranila Kina (prije nego što je Amerika zabranila Huawei)</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="vijesti-text-hover scale-img-hover" href="/vijesti/clanak/branko-segon-bivsem-konobaru-mora-isplatiti-300000-kuna/2088045.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Branko &#x160;egon biv&#x161;em konobaru mora isplatiti 300.000 kuna" src="https://ip.index.hr/remote/indexnew.s3.index.hr/segon.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="vijesti-text-hover title">Branko Šegon bivšem konobaru mora isplatiti 300.000 kuna</h3>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="vijesti-text-hover scale-img-hover" href="/vijesti/clanak/u-pozaru-u-indiji-poginulo-19-ljudi-ucenici-skakali-sa-zgrade/2088060.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="U po&#x17E;aru u Indiji poginulo 19 ljudi, u&#x10D;enici skakali sa zgrade" src="https://ip.index.hr/remote/indexnew.s3.index.hr/pozar-indija-yt.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="vijesti-text-hover title">U požaru u Indiji poginulo 19 ljudi, učenici skakali sa zgrade</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="vijesti-text-hover scale-img-hover" href="/vijesti/clanak/muskarca-iz-zapresica-uhvatili-s-01-gramom-marihuane-osudjen-je/2088056.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Mu&#x161;karca iz Zapre&#x161;i&#x107;a uhvatili s 0,1 gramom marihuane. Osu&#x111;en je" src="https://ip.index.hr/remote/indexnew.s3.index.hr/hjmghmghhh.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="vijesti-text-hover title">Muškarca iz Zaprešića uhvatili s 0,1 gramom marihuane. Osuđen je</h3>
+</a>
+</div>
+</div>
+</div>
+<div class="home-category-timeline">
+<div class="home-cube-big-timeline">
+<ul class="nav timeline-tab" timeline-tab role="tablist" data-category="vijesti" data-category-id="3">
+<li role="presentation" class="active latest-vijesti"><a href="#tab-content-latest-vijesti" aria-controls="tab-content-latest-vijesti" role="tab" data-toggle="tab"> Najnovije</a></li>
+<li role="presentation" class="most-read-vijesti"><a href="#tab-content-most-read-vijesti" aria-controls="tab-content-most-read-vijesti" role="tab" data-toggle="tab"> Najčitanije</a></li>
+<hr class="vijesti-bg" />
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="tab-content-latest-vijesti">
+<div class="timeline-content latest">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">16</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/amerikanci-optuzuju-iran-za-napad-na-tankere/2088084.aspx">
+Amerikanci optužuju Iran za napad na tankere
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">28</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/13-ozlijedjenih-u-eksploziji-u-lyonu-policija-trazi-bombasa/2088049.aspx">
+13 ozlijeđenih u eksploziji u Lyonu, policija traži bombaša
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">36</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/pompeo-stize-na-turneju-u-europu-posjetit-ce-cetiri-zemlje/2088082.aspx">
+Pompeo stiže na turneju u Europu, posjetit će četiri zemlje
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">37</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/trump-zao-mi-je-zbog-therese-may/2088081.aspx">
+Trump: Žao mi je zbog Therese May
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/evo-koje-je-tvrtke-zabranila-kina-prije-nego-sto-je-amerika-zabranila-huawei/2087609.aspx">
+Evo koje je tvrtke zabranila Kina (prije nego što je Amerika zabranila Huawei)
+</a>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najnovije?kategorija=3">Prikaži još vijesti</a>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="tab-content-most-read-vijesti">
+<div class="timeline-content most-read">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">1</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/otac-poginule-curice-dojurio-je-velikom-brzinom-uzeo-mi-je-cijeli-zivot/2087941.aspx">
+Otac poginule curice: Dojurio je velikom brzinom. Uzeo mi je cijeli život
+</a>
+<div class="line" style="width: 90%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">2</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/objavljeni-detalji-smrti-curice-jurio-bmwom-pa-ju-udario-na-zebri/2087903.aspx">
+Objavljeni detalji smrti curice: Jurio BMW-om pa ju udario na zebri
+</a>
+<div class="line" style="width: 72%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">3</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/muskarca-iz-zapresica-uhvatili-s-01-gramom-marihuane-osudjen-je/2088056.aspx">
+Muškarca iz Zaprešića uhvatili s 0,1 gramom marihuane. Osuđen je
+</a>
+<div class="line" style="width: 54%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">4</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/preminuo-maleni-petar-simun-izgubio-je-bitku-s-teskom-bolescu/2087904.aspx">
+Preminuo maleni Petar Šimun, izgubio je bitku s teškom bolešću
+</a>
+<div class="line" style="width: 36%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center vijesti-text">
+<span class="num">5</span>
+</div>
+<div class="title-box">
+<a class="vijesti-text-hover" href="/vijesti/clanak/starac-kod-karlovca-ubio-mladog-provalnika-pa-nestao-pronadjen-je-mrtav/2087946.aspx">
+Starac kod Karlovca ubio mladog provalnika pa nestao. Pronađen je mrtav
+</a>
+<div class="line" style="width: 18%;"></div>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najcitanije?kategorija=3">Prikaži još vijesti</a>
+</div>
+</div>
+</div>
+</div>
+<div class="separator-30"></div>
+<div class="sticky ad-ocean-box no-margin">
+<div id='crt-1130726' style="width:300px;height:250px;"></div>
+<script>
+                var Criteo = Criteo || {};
+                Criteo.events = Criteo.events || [];
+                Criteo.events.push(function () {
+                    Criteo.DisplayAcceptableAdIfAdblocked({
+                        "zoneid": 1130726,
+                        "containerid": "crt-1130726",
+                        "overrideZoneFloor": false
+                    });
+                });
+                window.addEventListener("message", function (e) {
+                    if (e.origin == (location.protocol == 'https:' ? 'https://' : 'http://') + 'cas.criteo.com' && e.data == 'passback-1130726') {
+                        document.getElementById("crt-1130726").style.display = "none";
+                    } else {
+                        return;
+                    }
+                }, false);
+            </script>
+<div id="adoceanhrpgkinwficz"></div>
+</div>
+</div>
+</div>
+<div class="ad-ocean-billboard">
+<div id="adoceanhrydffdpikok"></div>
+</div> <div class="main-category-header" data-category-change="sport">
+<div class="main-category-navigation scroll-menu-arrows-holder">
+<ul class="scroll-menu">
+<li class="root-category"><a class="sport-text magazin-text-hover" href="/sport">Sport</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/nogomet/1638.aspx">Nogomet</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/kosarka/1639.aspx">Ko&#x161;arka</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/tenis/1640.aspx">Tenis</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/ostali-sportovi/1641.aspx">Ostali sportovi</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/regija/1692.aspx">Regija</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/komentari/1738.aspx">Komentari</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/borilacki-sportovi/1662.aspx">Borila&#x10D;ki sportovi</a></li>
+<li class="scroll-menu-item"><a class="sport-text-hover" href="/sport/rubrika/esport/1731.aspx">E-Sport</a></li>
+</ul>
+<div class="scroll-menu-arrows display-none">
+<div class="navigation-arrow left-arrow disabled sport-text-hover"><i class="index-arrow-left"></i></div>
+<div class="navigation-arrow right-arrow disabled sport-text-hover"><i class="index-arrow-right"></i></div>
+</div>
+</div>
+</div>
+<div class="main-category-container flex">
+<div class="main-category-holder">
+<div class="top-box-holder flex">
+<div class="left-part">
+<div class="first-news">
+<div class="scale-img-hover">
+<a class="sport-text-hover" href="/sport/clanak/bacio-sam-navijacima-preko-ograde-pehar-lige-prvaka-benitezov-govor-bio-je-sve/2087935.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Bacio sam navija&#x10D;ima preko ograde pehar Lige prvaka. Benitezov govor bio je sve" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_00998789__2__.jpg?width=488&height=268&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="label-topic sport-text">BI&#x160;&#x106;AN EKSKLUZIVNO O MITSKOM FINALU </div>
+<h2 class="title">Bacio sam navijačima preko ograde pehar Lige prvaka. Benitezov govor bio je sve</h2>
+</a>
+</div>
+<div class="summary">BA&#x160; u danima kada je uzeo prvi trofej s Rijekom, razgovarali smo s Igorom Bi&#x161;&#x107;anom o njegovim najljep&#x161;im uspomenama iz igra&#x10D;ke karijere, o mitskom istanbulskom finalu iz 2005. godine, o Liverpoolu danas i njihovoj sjajnoj sezoni koju jo&#x161; stignu okruniti naslovom prvaka Europe.</div>
+</div>
+<div class="home-key-info-container">
+<h3 class="main-title">Ključni podaci</h3>
+<div>
+<div class="key-info-holder">
+<ul>
+<li class="sport-bg-before">
+<h3 class="key-info">S Bišćanom smo razgovarali o finalu Lige prvaka</h3>
+</li>
+<li class="sport-bg-before">
+<h3 class="key-info">Prisjetio se osvajanja trofeja 2005. godine</h3>
+</li>
+</ul>
+</div>
+</div></div> <div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2087935">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a href="/sport/clanak/bacio-sam-navijacima-preko-ograde-pehar-lige-prvaka-benitezov-govor-bio-je-sve/2087935.aspx#comments-container" class="fb-comments" data-facebook-url="https://www.index.hr/clanak.aspx?id=2087935">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+ </div>
+<div class="right-part">
+<div class="second-news-holder">
+<a class="sport-text-hover scale-img-hover" href="/sport/clanak/odlazak-simeoneovog-ratnika-simbola-svega-sto-atletico-predstavlja/2087422.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Odlazak Simeoneovog ratnika, simbola svega &#x161;to Atletico predstavlja" src="https://ip.index.hr/remote/indexnew.s3.index.hr/godin.jpg?width=325&height=170&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="label-topic sport-text">DIEGO GODIN</div>
+<h2 class="title sport-text-hover">Odlazak Simeoneovog ratnika, simbola svega što Atletico predstavlja</h2>
+</a>
+</div>
+<div class="other-news-holder">
+<ul>
+<li>
+<a class="sport-text-hover scale-img-hover flex" href="/sport/clanak/cibona-grabi-prema-naslovu-ponovno-je-pobijedila-cedevitu/2088076.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Cibona grabi prema naslovu. Ponovno je pobijedila Cedevitu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/PXL_240519_24788139.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Cibona grabi prema naslovu. Ponovno je pobijedila Cedevitu</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="sport-text-hover scale-img-hover flex" href="/sport/clanak/dresovi-za-novu-sezonu-neki-klubovi-odusevili-neki-su-ocajni-barca-sokirala/2088057.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Dresovi za novu sezonu: Neki klubovi odu&#x161;evili, neki su o&#x10D;ajni, Barca &#x161;okirala" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Screenshot_2__4__.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Dresovi za novu sezonu: Neki klubovi oduševili, neki su očajni, Barca šokirala</h3>
+</div>
+ </a>
+</li>
+<li>
+<a class="sport-text-hover scale-img-hover flex" href="/sport/clanak/the-independent-united-ne-zeli-perisica-trazi-drugog-igraca-intera-za-lukakua/2088073.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="The Independent: United ne &#x17E;eli Peri&#x161;i&#x107;a. Tra&#x17E;i drugog igra&#x10D;a Intera za Lukakua" src="https://ip.index.hr/remote/indexnew.s3.index.hr/perisic-epa-1200__1__.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">The Independent: United ne želi Perišića. Traži drugog igrača Intera za Lukakua</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="sport-text-hover scale-img-hover flex" href="/sport/clanak/pogodio-cijelo-kolo-premiershipa-nije-imao-pojma-da-je-dobio-milijun-kuna/2088066.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Pogodio cijelo kolo Premiershipa, nije imao pojma da je dobio milijun kuna" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_55186694.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Pogodio cijelo kolo Premiershipa, nije imao pojma da je dobio milijun kuna</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="featured-container main-content-bg">
+<h2 class="main-title"><span>Teme i komentari</span></h2>
+<div class="flex">
+<div class="featured-item">
+<a class="sport-text-hover scale-img-hover tag-item" href="/tag/105851/sandra-perkovic.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/Screenshot_3__2__.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic sport-text">SANDRA PERKOVI&#x106;</div>
+</a>
+<div>
+<a class="sport-text-hover related-item" href="/sport/clanak/sandra-sokirala-prica-o-kraju-karijere-zemlje-placaju-zlato-milijun-eura/2087948.aspx">
+<h3 class="title">Sandra &#x161;okirala, pri&#x10D;a o kraju karijere. &quot;Zemlje pla&#x107;aju zlato milijun eura&quot;</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/sandra-perkovic-najavila-odlazak-iz-hrvatske-moj-edis-radi-za-4000-kuna/2087912.aspx">
+<h3 class="title">Sandra Perkovi&#x107; najavila odlazak iz Hrvatske! &quot;Moj Edis radi za 4000 kuna&quot;</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/matesa-hrvatski-sport-vise-daje-nego-sto-dobije-od-drzave/2051596.aspx">
+<h3 class="title">Mate&#x161;a: Hrvatski sport vi&#x161;e daje nego &#x161;to dobije od dr&#x17E;ave</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="sport-text-hover scale-img-hover tag-item" href="https://www.index.hr/tag/280555/mario-nakic.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/slkaaa.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic sport-text">MVP Eurolige odbio Hrvatsku zbog Srbije</div>
+</a>
+<div>
+<a class="sport-text-hover related-item" href="/sport/clanak/hrvatski-izbornik-o-klincu-koji-je-odabrao-srbiju-mozda-je-i-bolje-ovako/2087944.aspx">
+<h3 class="title">Hrvatski izbornik o klincu koji je odabrao Srbiju: &quot;Mo&#x17E;da je i bolje ovako&quot;</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/najbolji-junior-europe-odbio-hrvatsku-i-izabrao-srbiju/2087934.aspx">
+<h3 class="title">Najbolji junior Europe odbio Hrvatsku i izabrao Srbiju</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/mladic-koji-je-real-odveo-na-krov-europe-bira-izmedju-hrvatske-i-srbije/2086953.aspx">
+<h3 class="title">Mladi&#x107; koji je Real odveo na krov Europe bira izme&#x111;u Hrvatske i Srbije</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="sport-text-hover scale-img-hover tag-item" href="/tag/1027920/hajduk-kontra-hnsa.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/ezgif.com-gif-maker(7)__1__.gif?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic sport-text">HAJDUK KONTRA HNS-A</div>
+</a>
+<div>
+<a class="sport-text-hover related-item" href="/sport/clanak/hns-izdao-priopcenje-o-hajduku-razumijemo-suze-i-mi-smo-plakali/2087899.aspx">
+<h3 class="title">HNS izdao priop&#x107;enje o Hajduku: &quot;Razumijemo suze, i mi smo plakali&quot;</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/strahonja-sudacke-odluke-na-utakmici-pionira-hajduka-i-osijeka-bile-su-ispravne/2087539.aspx">
+<h3 class="title">Strahonja: Suda&#x10D;ke odluke na utakmici pionira Hajduka i Osijeka bile su ispravne</h3>
+</a>
+<a class="sport-text-hover related-item" href="/sport/clanak/ekskluzivno-sporne-situacije-zbog-kojih-je-hajduk-opet-krenuo-u-rat-s-hnsom/2087281.aspx">
+<h3 class="title">Ekskluzivno: Sporne situacije zbog kojih je Hajduk opet krenuo u rat s HNS-om</h3>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cube-big-holder media-1024">
+<div class="cube-big-top-part">
+<div class="cube-big-mainnews-holder">
+<div class="scale-img-hover">
+<a class="sport-text-hover" href="/sport/clanak/bacio-sam-navijacima-preko-ograde-pehar-lige-prvaka-benitezov-govor-bio-je-sve/2087935.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Bacio sam navija&#x10D;ima preko ograde pehar Lige prvaka. Benitezov govor bio je sve" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_00998789__2__.jpg?width=688&height=363&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="label-topic sport-text">BI&#x160;&#x106;AN EKSKLUZIVNO O MITSKOM FINALU </div>
+<h2 class="title">Bacio sam navijačima preko ograde pehar Lige prvaka. Benitezov govor bio je sve</h2>
+</a>
+</div>
+<div class="summary">BA&#x160; u danima kada je uzeo prvi trofej s Rijekom, razgovarali smo s Igorom Bi&#x161;&#x107;anom o njegovim najljep&#x161;im uspomenama iz igra&#x10D;ke karijere, o mitskom istanbulskom finalu iz 2005. godine, o Liverpoolu danas i njihovoj sjajnoj sezoni koju jo&#x161; stignu okruniti naslovom prvaka Europe.</div>
+<div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2087935">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a class="fb-comments" href="/sport/clanak/bacio-sam-navijacima-preko-ograde-pehar-lige-prvaka-benitezov-govor-bio-je-sve/2087935.aspx#comments-container" data-facebook-url="https://www.index.hr/clanak.aspx?id=2087935">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="sport-text-hover scale-img-hover" href="/sport/clanak/odlazak-simeoneovog-ratnika-simbola-svega-sto-atletico-predstavlja/2087422.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Odlazak Simeoneovog ratnika, simbola svega &#x161;to Atletico predstavlja" src="https://ip.index.hr/remote/indexnew.s3.index.hr/godin.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="sport-text-hover title">Odlazak Simeoneovog ratnika, simbola svega što Atletico predstavlja</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="sport-text-hover scale-img-hover" href="/sport/clanak/cibona-grabi-prema-naslovu-ponovno-je-pobijedila-cedevitu/2088076.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Cibona grabi prema naslovu. Ponovno je pobijedila Cedevitu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/PXL_240519_24788139.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="sport-text-hover title">Cibona grabi prema naslovu. Ponovno je pobijedila Cedevitu</h3>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="sport-text-hover scale-img-hover" href="/sport/clanak/dresovi-za-novu-sezonu-neki-klubovi-odusevili-neki-su-ocajni-barca-sokirala/2088057.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Dresovi za novu sezonu: Neki klubovi odu&#x161;evili, neki su o&#x10D;ajni, Barca &#x161;okirala" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Screenshot_2__4__.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="sport-text-hover title">Dresovi za novu sezonu: Neki klubovi oduševili, neki su očajni, Barca šokirala</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="sport-text-hover scale-img-hover" href="/sport/clanak/the-independent-united-ne-zeli-perisica-trazi-drugog-igraca-intera-za-lukakua/2088073.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="The Independent: United ne &#x17E;eli Peri&#x161;i&#x107;a. Tra&#x17E;i drugog igra&#x10D;a Intera za Lukakua" src="https://ip.index.hr/remote/indexnew.s3.index.hr/perisic-epa-1200__1__.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="sport-text-hover title">The Independent: United ne želi Perišića. Traži drugog igrača Intera za Lukakua</h3>
+</a>
+</div>
+</div>
+</div>
+<div class="home-category-timeline">
+<div class="home-cube-big-timeline">
+<ul class="nav timeline-tab" timeline-tab role="tablist" data-category="sport" data-category-id="150">
+<li role="presentation" class="active latest-sport"><a href="#tab-content-latest-sport" aria-controls="tab-content-latest-sport" role="tab" data-toggle="tab"> Najnovije</a></li>
+<li role="presentation" class="most-read-sport"><a href="#tab-content-most-read-sport" aria-controls="tab-content-most-read-sport" role="tab" data-toggle="tab"> Najčitanije</a></li>
+<hr class="sport-bg" />
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="tab-content-latest-sport">
+<div class="timeline-content latest">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">29</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/bacio-sam-navijacima-preko-ograde-pehar-lige-prvaka-benitezov-govor-bio-je-sve/2087935.aspx">
+Bacio sam navijačima preko ograde pehar Lige prvaka. Benitezov govor bio je sve
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">55</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/the-independent-united-ne-zeli-perisica-trazi-drugog-igraca-intera-za-lukakua/2088073.aspx">
+The Independent: United ne želi Perišića. Traži drugog igrača Intera za Lukakua
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/cibona-grabi-prema-naslovu-ponovno-je-pobijedila-cedevitu/2088076.aspx">
+Cibona grabi prema naslovu. Ponovno je pobijedila Cedevitu
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/chelsea-sazalijeva-navijace-koji-se-muce-s-dolaskom-u-baku-probajte-vlakom/2088071.aspx">
+Chelsea sažalijeva navijače koji se muče s dolaskom u Baku: "Probajte vlakom..."
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/marca-simunovic-na-meti-kluba-iz-primere/2088068.aspx">
+Marca: Šimunović na meti kluba iz Primere
+</a>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najnovije?kategorija=150">Prikaži još vijesti</a>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="tab-content-most-read-sport">
+<div class="timeline-content most-read">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">1</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/sandra-perkovic-najavila-odlazak-iz-hrvatske-moj-edis-radi-za-4000-kuna/2087912.aspx">
+Sandra Perković najavila odlazak iz Hrvatske! "Moj Edis radi za 4000 kuna"
+</a>
+<div class="line" style="width: 90%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">2</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/sandra-sokirala-prica-o-kraju-karijere-zemlje-placaju-zlato-milijun-eura/2087948.aspx">
+Sandra šokirala, priča o kraju karijere. "Zemlje plaćaju zlato milijun eura"
+</a>
+<div class="line" style="width: 72%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">3</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/hrvatski-izbornik-o-klincu-koji-je-odabrao-srbiju-mozda-je-i-bolje-ovako/2087944.aspx">
+Hrvatski izbornik o klincu koji je odabrao Srbiju: "Možda je i bolje ovako"
+</a>
+<div class="line" style="width: 54%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">4</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/marca-ramos-zeli-otici-iz-reala/2087967.aspx">
+Marca: Ramos želi otići iz Reala
+</a>
+<div class="line" style="width: 36%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center sport-text">
+<span class="num">5</span>
+</div>
+<div class="title-box">
+<a class="sport-text-hover" href="/sport/clanak/dresovi-za-novu-sezonu-neki-klubovi-odusevili-neki-su-ocajni-barca-sokirala/2088057.aspx">
+Dresovi za novu sezonu: Neki klubovi oduševili, neki su očajni, Barca šokirala
+</a>
+<div class="line" style="width: 18%;"></div>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najcitanije?kategorija=150">Prikaži još vijesti</a>
+</div>
+</div>
+</div>
+</div>
+<div class="separator-30"></div>
+<div class="sticky ad-ocean-box no-margin">
+<div id='crt-1130727' style="width:300px;height:250px;"></div>
+<script>
+                var Criteo = Criteo || {};
+                Criteo.events = Criteo.events || [];
+                Criteo.events.push(function () {
+                    Criteo.DisplayAcceptableAdIfAdblocked({
+                        "zoneid": 1130727,
+                        "containerid": "crt-1130727",
+                        "overrideZoneFloor": false
+                    });
+                });
+                window.addEventListener("message", function (e) {
+                    if (e.origin == (location.protocol == 'https:' ? 'https://' : 'http://') + 'cas.criteo.com' && e.data == 'passback-1130727') {
+                        document.getElementById("crt-1130727").style.display = "none";
+                    } else {
+                        return;
+                    }
+                }, false);
+            </script>
+<div id="adoceanhrmhroqtpmbu"></div>
+</div>
+</div>
+</div>
+<div class="ad-ocean-billboard">
+<div id="adoceanhrvemlgmsonf"></div>
+</div> <div class="main-category-header" data-category-change="magazin">
+<div class="main-category-navigation scroll-menu-arrows-holder">
+<ul class="scroll-menu">
+<li class="root-category"><a class="magazin-text magazin-text-hover" href="/magazin">Magazin</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/tv-film/1525.aspx">TV &amp; Film</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/glazba/1526.aspx">Glazba</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/tech-gadget/1528.aspx">Tech &amp; Gadget</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/lifestyle/1529.aspx">Lifestyle</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/showbiz/1527.aspx">Showbiz</a></li>
+<li class="scroll-menu-item"><a class="magazin-text-hover" href="/magazin/rubrika/zanimljivosti/1530.aspx">Zanimljivosti</a></li>
+</ul>
+<div class="scroll-menu-arrows display-none">
+<div class="navigation-arrow left-arrow disabled magazin-text-hover"><i class="index-arrow-left"></i></div>
+<div class="navigation-arrow right-arrow disabled magazin-text-hover"><i class="index-arrow-right"></i></div>
+</div>
+</div>
+</div>
+<div class="main-category-container flex">
+<div class="main-category-holder">
+<div class="top-box-holder flex">
+<div class="left-part">
+<div class="first-news">
+<div class="scale-img-hover">
+<a class="magazin-text-hover" href="/magazin/clanak/evo-kakva-je-danas-i-sto-radi-mira-bicanic-prva-hrvatska-milijunasica-iz-kviza/2088078.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Evo kakva je danas i &#x161;to radi Mira Bi&#x107;ani&#x107;, prva hrvatska milijuna&#x161;ica iz kviza" src="https://ip.index.hr/remote/indexnew.s3.index.hr/mirabicanic.JPG?width=488&height=268&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h2 class="title">Evo kakva je danas i što radi Mira Bićanić, prva hrvatska milijunašica iz kviza</h2>
+</a>
+</div>
+<div class="summary">PRO&#x160;LO je 16 godina od tog povijesnog TV trenutka.</div>
+</div>
+<div class="home-related-holder">
+<h3 class="main-title">Vezane vijesti</h3>
+<ul>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/tarik-filipovic-snimio-svoju-posljednju-epizodu-potjere/2088022.aspx">
+<h3 class="title">Tarik Filipović snimio svoju posljednju epizodu "Potjere"</h3>
+</a>
+</li>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/tarik-se-vraca-u-milijunas-evo-kako-ce-hrt-naci-novog-voditelja-potjere/2078139.aspx">
+<h3 class="title">Tarik se vraća u Milijunaš, evo kako će HRT naći novog voditelja Potjere</h3>
+</a>
+</li>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/ovaj-slatki-djecak-sad-je-jedno-od-najpoznatijih-televizijskih-lica-u-hrvatskoj/2069990.aspx">
+<h3 class="title">Ovaj slatki dječak sad je jedno od najpoznatijih televizijskih lica u Hrvatskoj</h3>
+</a>
+</li>
+</ul>
+</div> <div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2088078">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a href="/magazin/clanak/evo-kakva-je-danas-i-sto-radi-mira-bicanic-prva-hrvatska-milijunasica-iz-kviza/2088078.aspx#comments-container" class="fb-comments" data-facebook-url="https://www.index.hr/clanak.aspx?id=2088078">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+</div>
+<div class="right-part">
+<div class="second-news-holder">
+<a class="magazin-text-hover scale-img-hover" href="/magazin/clanak/tarikova-objava-otkrila-koliko-mu-je-tesko-pao-oprostaj-od-potjere/2088079.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Tarikova objava otkrila koliko mu je te&#x161;ko pao opro&#x161;taj od &quot;Potjere&quot;" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dfjd__4__.jpg?width=325&height=170&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h2 class="title magazin-text-hover">Tarikova objava otkrila koliko mu je teško pao oproštaj od "Potjere"</h2>
+</a>
+</div>
+<div class="other-news-holder">
+<ul>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/zene-otkrile-najgluplje-komentare-tipova-o-njihovom-tijelu-price-su-bolne/2088070.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="&#x17D;ene otkrile najgluplje komentare tipova o njihovom tijelu - pri&#x10D;e su bolne" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dfjd__2__.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Žene otkrile najgluplje komentare tipova o njihovom tijelu - priče su bolne</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/tajkun-milos-zaprosio-40-godina-mladju-curu-na-crvenom-tepihu-u-cannesu/2088055.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Tajkun Milo&#x161; zaprosio 40 godina mla&#x111;u curu na crvenom tepihu u Cannesu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/porwtw.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-photo-circle"></i>
+<div class="icon-bg magazin-bg"></div>
+</div>
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Tajkun Miloš zaprosio 40 godina mlađu curu na crvenom tepihu u Cannesu</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/osramocenog-youtubera-ponovno-napali-zbog-onog-sto-je-objavio-na-instagramu/2088067.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Osramo&#x107;enog YouTubera ponovno napali zbog onog &#x161;to je objavio na Instagramu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/charles__1__.JPG?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Osramoćenog YouTubera ponovno napali zbog onog što je objavio na Instagramu</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="magazin-text-hover scale-img-hover flex" href="/magazin/clanak/britance-zaludio-tip-koji-je-namjestao-govornicu-theresi-may-kako-je-zgodan/2088044.aspx">
+<div class="flex-holder">
+<div class="img-holder">
+<img class="img-responsive" alt="Britance zaludio tip koji je namje&#x161;tao govornicu Theresi May: &quot;Kako je zgodan&quot;" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dfjd.jpg?width=112&height=72&mode=crop&anchor=topcenter&scale=both" />
+</div>
+</div>
+<div dot-dot class="title-holder">
+<h3 class="title">Britance zaludio tip koji je namještao govornicu Theresi May: "Kako je zgodan"</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="featured-container main-content-bg">
+<h2 class="main-title"><span>Teme i komentari</span></h2>
+<div class="flex">
+<div class="featured-item">
+<a class="magazin-text-hover scale-img-hover tag-item">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/INT.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic magazin-text">INTERVJUI</div>
+</a>
+<div>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/kad-je-saznala-da-umire-tijina-mama-mene-je-nazvala-da-se-pobrinem-za-malenu/2087698.aspx">
+<h3 class="title">&quot;Kad je saznala da umire, Tijina mama mene je nazvala da se pobrinem za malenu&quot;</h3>
+</a>
+ <a class="magazin-text-hover related-item" href="/magazin/clanak/video-grubnic-desila-mi-se-prekrasna-ljubav-odrekao-sam-se-svega-zbog-nje/2087033.aspx">
+<h3 class="title">VIDEO Grubni&#x107;: Desila mi se prekrasna ljubav, odrekao sam se svega zbog nje</h3>
+</a>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/ciganovic-pohvalio-bih-kolindu-jer-sad-nosi-periku-umjesto-one-bapske-pundje/2085579.aspx">
+<h3 class="title">Ciganovi&#x107;: Pohvalio bih Kolindu jer sad nosi periku umjesto one bapske pun&#x111;e</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="magazin-text-hover scale-img-hover tag-item" href="https://www.index.hr/tag/1027922/norijada-2019.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/norijada.jpg?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic magazin-text">NORIJADA 2019.</div>
+</a>
+<div>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/majice-zagrebackih-maturanata-ludje-su-nego-ikad-koja-vam-je-najbolja/2087546.aspx">
+<h3 class="title">Majice zagreba&#x10D;kih maturanata lu&#x111;e su nego ikad, koja vam je najbolja?</h3>
+</a>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/cuga-trava-i-ceca-pogledajte-kako-zagrebacki-maturanti-slave-na-bundeku/2087454.aspx">
+<h3 class="title">Cuga, trava i Ceca: Pogledajte kako zagreba&#x10D;ki maturanti slave na Bundeku</h3>
+</a>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/dok-zagrebacki-maturanti-pjevaju-thompsona-i-cajke-karlovacki-zaplesali-kolo/2087411.aspx">
+<h3 class="title">Dok zagreba&#x10D;ki maturanti pjevaju Thompsona i cajke, karlova&#x10D;ki zaplesali kolo</h3>
+</a>
+</div>
+</div>
+<div class="featured-item">
+<a class="magazin-text-hover scale-img-hover tag-item" href="https://www.index.hr/tag/240350/igra-prijestolja.aspx">
+<div class="img-holder">
+<img src="https://ip.index.hr/remote/indexnew.s3.index.hr/got1.png?width=265&height=141&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="topic magazin-text">IGRA PRIJESTOLJA</div>
+</a>
+<div>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/osjecat-cete-se-staro-kad-vidite-koliko-se-svijet-promijenio-u-8-godina-gota/2087568.aspx">
+<h3 class="title">Osje&#x107;at &#x107;ete se staro kad vidite koliko se svijet promijenio u 8 godina GOT-a</h3>
+</a>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/george-martin-otkrio-kad-stize-nova-knjiga-iz-serijala-po-kojem-je-sniman-got/2087958.aspx">
+<h3 class="title">George Martin otkrio kad sti&#x17E;e nova knjiga iz serijala po kojem je sniman GOT</h3>
+</a>
+<a class="magazin-text-hover related-item" href="/magazin/clanak/najveci-propusti-autora-gota-koje-im-fanovi-ne-mogu-oprostiti/2087874.aspx">
+<h3 class="title">Najve&#x107;i propusti autora GOT-a koje im fanovi ne mogu oprostiti</h3>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cube-big-holder media-1024">
+<div class="cube-big-top-part">
+<div class="cube-big-mainnews-holder">
+<div class="scale-img-hover">
+<a class="magazin-text-hover" href="/magazin/clanak/evo-kakva-je-danas-i-sto-radi-mira-bicanic-prva-hrvatska-milijunasica-iz-kviza/2088078.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Evo kakva je danas i &#x161;to radi Mira Bi&#x107;ani&#x107;, prva hrvatska milijuna&#x161;ica iz kviza" src="https://ip.index.hr/remote/indexnew.s3.index.hr/mirabicanic.JPG?width=688&height=363&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h2 class="title">Evo kakva je danas i što radi Mira Bićanić, prva hrvatska milijunašica iz kviza</h2>
+</a>
+</div>
+<div class="summary">PRO&#x160;LO je 16 godina od tog povijesnog TV trenutka.</div>
+<div class="fb-share facebook-bg" fb-share data-facebook-url="https://www.index.hr/clanak.aspx?id=2088078">
+<i class="index-facebook"></i>
+<span class="share-count">0</span>
+</div>
+<a class="fb-comments" href="/magazin/clanak/evo-kakva-je-danas-i-sto-radi-mira-bicanic-prva-hrvatska-milijunasica-iz-kviza/2088078.aspx#comments-container" data-facebook-url="https://www.index.hr/clanak.aspx?id=2088078">
+<i class="index-fb-comment"></i>
+<span class="comment-count">0</span>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="magazin-text-hover scale-img-hover" href="/magazin/clanak/tarikova-objava-otkrila-koliko-mu-je-tesko-pao-oprostaj-od-potjere/2088079.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Tarikova objava otkrila koliko mu je te&#x161;ko pao opro&#x161;taj od &quot;Potjere&quot;" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dfjd__4__.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="magazin-text-hover title">Tarikova objava otkrila koliko mu je teško pao oproštaj od "Potjere"</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="magazin-text-hover scale-img-hover" href="/magazin/clanak/zene-otkrile-najgluplje-komentare-tipova-o-njihovom-tijelu-price-su-bolne/2088070.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="&#x17D;ene otkrile najgluplje komentare tipova o njihovom tijelu - pri&#x10D;e su bolne" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dfjd__2__.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="magazin-text-hover title">Žene otkrile najgluplje komentare tipova o njihovom tijelu - priče su bolne</h3>
+</a>
+</div>
+</div>
+<div class="cube-big-list-news-holder flex">
+<div class="news-item">
+<a class="magazin-text-hover scale-img-hover" href="/magazin/clanak/tajkun-milos-zaprosio-40-godina-mladju-curu-na-crvenom-tepihu-u-cannesu/2088055.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Tajkun Milo&#x161; zaprosio 40 godina mla&#x111;u curu na crvenom tepihu u Cannesu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/porwtw.jpg?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+ <div class="article-icon">
+<i class="index-photo-circle"></i>
+<div class="icon-bg magazin-bg"></div>
+</div>
+</div>
+<h3 class="magazin-text-hover title">Tajkun Miloš zaprosio 40 godina mlađu curu na crvenom tepihu u Cannesu</h3>
+</a>
+</div>
+<div class="news-item">
+<a class="magazin-text-hover scale-img-hover" href="/magazin/clanak/osramocenog-youtubera-ponovno-napali-zbog-onog-sto-je-objavio-na-instagramu/2088067.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Osramo&#x107;enog YouTubera ponovno napali zbog onog &#x161;to je objavio na Instagramu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/charles__1__.JPG?width=331&height=175&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="magazin-text-hover title">Osramoćenog YouTubera ponovno napali zbog onog što je objavio na Instagramu</h3>
+</a>
+</div>
+</div>
+</div>
+<div class="home-category-timeline">
+<div class="home-cube-big-timeline">
+<ul class="nav timeline-tab" timeline-tab role="tablist" data-category="magazin" data-category-id="1523">
+<li role="presentation" class="active latest-magazin"><a href="#tab-content-latest-magazin" aria-controls="tab-content-latest-magazin" role="tab" data-toggle="tab"> Najnovije</a></li>
+<li role="presentation" class="most-read-magazin"><a href="#tab-content-most-read-magazin" aria-controls="tab-content-most-read-magazin" role="tab" data-toggle="tab"> Najčitanije</a></li>
+<hr class="magazin-bg" />
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="tab-content-latest-magazin">
+<div class="timeline-content latest">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">48</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/tarikova-objava-otkrila-koliko-mu-je-tesko-pao-oprostaj-od-potjere/2088079.aspx">
+Tarikova objava otkrila koliko mu je teško pao oproštaj od "Potjere"
+</a>
+</div>
+ </li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">54</span>
+<span class="desc">min</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/evo-kakva-je-danas-i-sto-radi-mira-bicanic-prva-hrvatska-milijunasica-iz-kviza/2088078.aspx">
+Evo kakva je danas i što radi Mira Bićanić, prva hrvatska milijunašica iz kviza
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/zene-otkrile-najgluplje-komentare-tipova-o-njihovom-tijelu-price-su-bolne/2088070.aspx">
+Žene otkrile najgluplje komentare tipova o njihovom tijelu - priče su bolne
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">1</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/osramocenog-youtubera-ponovno-napali-zbog-onog-sto-je-objavio-na-instagramu/2088067.aspx">
+Osramoćenog YouTubera ponovno napali zbog onog što je objavio na Instagramu
+</a>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center disabled-text">
+<span class="num">2</span>
+<span class="desc">h</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/ljubimci/clanak/stenci-macici-i-sva-ostala-mladuncad-zivotinja-uvijek-izmame-osmijeh/2087806.aspx">
+Štenci, mačići i sva ostala mladunčad životinja uvijek izmame osmijeh
+</a>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najnovije?kategorija=1523">Prikaži još vijesti</a>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="tab-content-most-read-magazin">
+<div class="timeline-content most-read">
+<ul>
+<li class="clearfix">
+<div class="side-content text-center magazin-text">
+<span class="num">1</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/najizazovnija-odjeca-ikad-tenisacica-u-tajicama-je-glavna-senzacija-turnira/2087907.aspx">
+"Najizazovnija odjeća ikad": Tenisačica u tajicama je glavna senzacija turnira
+</a>
+<div class="line" style="width: 90%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center magazin-text">
+<span class="num">2</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/kad-je-saznala-da-umire-tijina-mama-mene-je-nazvala-da-se-pobrinem-za-malenu/2087698.aspx">
+"Kad je saznala da umire, Tijina mama mene je nazvala da se pobrinem za malenu"
+</a>
+<div class="line" style="width: 72%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center magazin-text">
+<span class="num">3</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/tajkun-milos-zaprosio-40-godina-mladju-curu-na-crvenom-tepihu-u-cannesu/2088055.aspx">
+Tajkun Miloš zaprosio 40 godina mlađu curu na crvenom tepihu u Cannesu
+</a>
+<div class="line" style="width: 54%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center magazin-text">
+<span class="num">4</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/izvrijedjale-nives-celzijus-zbog-selfieja-ovakav-njezin-odgovor-nisu-ocekivale/2088002.aspx">
+Izvrijeđale Nives Celzijus zbog selfieja, ovakav njezin odgovor nisu očekivale
+</a>
+<div class="line" style="width: 36%;"></div>
+</div>
+</li>
+<li class="clearfix">
+<div class="side-content text-center magazin-text">
+<span class="num">5</span>
+</div>
+<div class="title-box">
+<a class="magazin-text-hover" href="/magazin/clanak/pogledajte-kako-danas-zivi-denis-barta-slijepi-pobjednik-supertalenta/2088026.aspx">
+Pogledajte kako danas živi Denis Barta, slijepi pobjednik "Supertalenta"
+</a>
+<div class="line" style="width: 18%;"></div>
+</div>
+</li>
+</ul>
+<a class="more-news" href="/najcitanije?kategorija=1523">Prikaži još vijesti</a>
+</div>
+</div>
+</div>
+</div>
+<div class="separator-30"></div>
+<div class="sticky">
+
+<div id='DF4'>
+<script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/21703950087/DF4', [[300, 600], [300, 250], [1, 1]], 'DF4').addService(googletag.pubads());
+            googletag.display('DF4');
+        });
+    </script>
+</div>
+</div>
+</div>
+</div>
+<div class="ad-ocean-billboard">
+<div id="adoceanhroaclgkkici"></div>
+</div></div>
+<div class="plus-categories-container" data-category-change="main">
+<div class="plus-categories secondary-content-bg">
+<div class="plus-categories-holder main-container secondary-content-bg">
+<div class="plus-sign-big"></div>
+<div class="cubes flex">
+<div class="left-part flex">
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label rouge-bg rouge-bg-dark-hover" href="/rouge">Rouge</a>
+<a class="rouge-text-hover" href="/rouge/clanak/okrivite-horoskop-ovo-su-najgore-navike-svakog-znaka-kada-je-u-vezi/2088017.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Okrivite horoskop: Ovo su najgore navike svakog znaka kada je u vezi" src="https://ip.index.hr/remote/indexnew.s3.index.hr/51780443_139344190h428880_2077756863274901568_n.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Okrivite horoskop: Ovo su najgore navike svakog znaka kada je u vezi</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/rihanna-u-parizu-jos-jednom-pokazala-da-je-sama-sebi-najbolja-reklama/2087953.aspx">
+<div class="img-holder">
+<img alt="Rihanna u Parizu jo&#x161; jednom pokazala da je sama sebi najbolja reklama" src="https://ip.index.hr/remote/indexnew.s3.index.hr/GettyImages-1151257263g.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Rihanna u Parizu još jednom pokazala da je sama sebi najbolja reklama</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/nina-badric-spojila-nespojive-komade-i-sve-zacinila-torbicom-od-18-tisuca-kuna/2087927.aspx">
+<div class="img-holder">
+<img alt="Nina Badri&#x107; spojila nespojive komade i sve za&#x10D;inila torbicom od 18 tisu&#x107;a kuna" src="https://ip.index.hr/remote/indexnew.s3.index.hr/60603379_344789329561225_7556558240497916458_n (1).jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Nina Badrić spojila nespojive komade i sve začinila torbicom od 18 tisuća kuna</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/francuska-glumica-prekrsila-dress-code-i-ukrala-show-na-crvenom-tepihu-u-cannesu/2087990.aspx">
+<div class="img-holder">
+<img alt="Francuska glumica prekr&#x161;ila dress code i ukrala show na crvenom tepihu u Cannesu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_55214424g.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Francuska glumica prekršila dress code i ukrala show na crvenom tepihu u Cannesu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/anita-dujic-pozirala-u-chic-proljetnoj-haljini-koju-obozavaju-sve-generacije/2087894.aspx">
+<div class="img-holder">
+<img alt="Anita Duji&#x107; pozirala u chic proljetnoj haljini koju obo&#x17E;avaju sve generacije" src="https://ip.index.hr/remote/indexnew.s3.index.hr/59912277_587828021706425_6023060549978515899_n (1).jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Anita Dujić pozirala u chic proljetnoj haljini koju obožavaju sve generacije</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label auto-bg auto-bg-dark-hover" href="/auto">Auto</a>
+<a class="auto-text-hover" href="/auto/clanak/opel-corsa-krece-na-struju/2087961.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Opel Corsa kre&#x107;e na struju" src="https://ip.index.hr/remote/indexnew.s3.index.hr/opel-corsa-e1200.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Opel Corsa kreće na struju</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/skoda-ima-elektricni-model-evo-koliko-moze/2087763.aspx">
+<div class="img-holder">
+<img alt="&#x160;koda ima elektri&#x10D;ni model, evo koliko mo&#x17E;e" src="https://ip.index.hr/remote/indexnew.s3.index.hr/SKoda-citigo-eIV_1201.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Škoda ima električni model, evo koliko može</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovaj-model-renault-nudi-samo-rusima/2087774.aspx">
+<div class="img-holder">
+<img alt="Ovaj model Renault nudi samo Rusima" src="https://ip.index.hr/remote/indexnew.s3.index.hr/rArkana1200.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovaj model Renault nudi samo Rusima</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovo-nitko-nije-ocekivao-sef-daimlera-za-upravljacem-bmwa/2087769.aspx">
+<div class="img-holder">
+<img alt="Ovo nitko nije o&#x10D;ekivao: &#x160;ef Daimlera za upravlja&#x10D;em BMW-a" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Dzetcherekl1200.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo nitko nije očekivao: Šef Daimlera za upravljačem BMW-a</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovo-je-nova-skoda-superb/2087759.aspx">
+<div class="img-holder">
+<img alt="Ovo je nova &#x160;koda Superb!" src="https://ip.index.hr/remote/indexnew.s3.index.hr/SkodSuperbN1202.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo je nova Škoda Superb!</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label mame-bg mame-bg-dark-hover" href="/mame">Mame</a>
+<a class="mame-text-hover" href="/mame/clanak/suprugu-poznatog-kosarkasa-upozorili-kontroliraj-koliko-ti-dijete-jede/2087970.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Suprugu poznatog ko&#x161;arka&#x161;a upozorili: &quot;Kontroliraj koliko ti dijete jede&quot;" src="https://ip.index.hr/remote/indexnew.s3.index.hr/ayesha.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Suprugu poznatog košarkaša upozorili: "Kontroliraj koliko ti dijete jede"</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/kim-kardashian-na-udaru-trolova-zbog-bebe-psalma-koji-spava-u-kreveticu/2087947.aspx">
+<div class="img-holder">
+<img alt="Kim Kardashian na udaru trolova zbog bebe Psalma koji spava u kreveti&#x107;u" src="https://ip.index.hr/remote/indexnew.s3.index.hr/psalm.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Kim Kardashian na udaru trolova zbog bebe Psalma koji spava u krevetiću</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/petra-nizetic-sinu-je-dala-hrvatsko-ime/2087867.aspx">
+<div class="img-holder">
+<img alt="Petra Ni&#x17E;eti&#x107; sinu je dala hrvatsko ime" src="https://ip.index.hr/remote/indexnew.s3.index.hr/petra_nizetic.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Petra Nižetić sinu je dala hrvatsko ime</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/roditelji-milenijalci-djecu-ne-poticu-dovoljno-na-igru-potvrdilo-istrazivanje/2087955.aspx">
+<div class="img-holder">
+<img alt="Roditelji milenijalci djecu ne poti&#x10D;u dovoljno na igru, potvrdilo istra&#x17E;ivanje" src="https://ip.index.hr/remote/indexnew.s3.index.hr/igra.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Roditelji milenijalci djecu ne potiču dovoljno na igru, potvrdilo istraživanje</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/princ-william-ima-presladak-nadimak-za-svoju-mezimicu-charlotte/2087606.aspx">
+<div class="img-holder">
+<img alt="Princ William ima presladak nadimak za svoju mezimicu Charlotte" src="https://ip.index.hr/remote/indexnew.s3.index.hr/charlotte__2__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Princ William ima presladak nadimak za svoju mezimicu Charlotte</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder plain">
+<div class="sticky">
+
+<div id='DF5-large' style="text-align:center">
+<script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/21703950087/DF5', [[300, 250], [300, 600], [1, 1]], 'DF5-large').addService(googletag.pubads()).setTargeting('screen-size', 'large');
+            googletag.display('DF5-large');
+        });
+    </script>
+</div>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label ljubimci-bg ljubimci-bg-dark-hover" href="/ljubimci">Ljubimci</a>
+<a class="ljubimci-text-hover" href="/ljubimci/clanak/stenci-macici-i-sva-ostala-mladuncad-zivotinja-uvijek-izmame-osmijeh/2087806.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="&#x160;tenci, ma&#x10D;i&#x107;i i sva ostala mladun&#x10D;ad &#x17E;ivotinja uvijek izmame osmijeh" src="https://ip.index.hr/remote/indexnew.s3.index.hr/44961521_custom__1__.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Štenci, mačići i sva ostala mladunčad životinja uvijek izmame osmijeh</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/macka-je-ostavila-macica-u-tudjem-dvoristu-ocekivala-je-da-ce-joj-ljudi-pomoci/2087846.aspx">
+<div class="img-holder">
+<img alt="Ma&#x10D;ka je ostavila ma&#x10D;i&#x107;a u tu&#x111;em dvori&#x161;tu. O&#x10D;ekivala je da &#x107;e joj ljudi pomo&#x107;i" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Untitled-1__86__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Mačka je ostavila mačića u tuđem dvorištu. Očekivala je da će joj ljudi pomoći</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/ogromna-doga-poslusala-naredbu-svoje-male-vlasnice-i-zacudila-svijet/2087933.aspx">
+<div class="img-holder">
+<img alt="Ogromna doga poslu&#x161;ala naredbu svoje male vlasnice i za&#x10D;udila svijet" src="https://ip.index.hr/remote/indexnew.s3.index.hr/doga101__1__.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ogromna doga poslušala naredbu svoje male vlasnice i začudila svijet</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/iako-je-to-mnogima-cudno-ne-vole-svi-psi-mazenje-a-ovi-znakovi-ukazuju-na-to/2087969.aspx">
+<div class="img-holder">
+<img alt="Iako je to mnogima &#x10D;udno, ne vole svi psi ma&#x17E;enje, a ovi znakovi ukazuju na to" src="https://ip.index.hr/remote/indexnew.s3.index.hr/petting__1__.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Iako je to mnogima čudno, ne vole svi psi maženje, a ovi znakovi ukazuju na to</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/dubrovacki-azil-za-nezbrinute-zivotinje-bit-ce-najbolji-na-svijetu/2087843.aspx">
+<div class="img-holder">
+<img alt="Dubrova&#x10D;ki azil za nezbrinute &#x17E;ivotinje bit &#x107;e najbolji na svijetu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/120808340_custom.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Dubrovački azil za nezbrinute životinje bit će najbolji na svijetu</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label fit-bg fit-bg-dark-hover" href="/fit">Fit</a>
+<a class="fit-text-hover" href="/fit/clanak/lenny-kravitz-jednostavno-ne-stari-njegovi-trbusni-misici-su-nevjerojatni/2087906.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Lenny Kravitz jednostavno ne stari, njegovi trbu&#x161;ni mi&#x161;i&#x107;i su nevjerojatni" src="https://ip.index.hr/remote/indexnew.s3.index.hr/lenny.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Lenny Kravitz jednostavno ne stari, njegovi trbušni mišići su nevjerojatni</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/mozda-zvuci-nevjerojatno-ali-emily-ratajkowski-ne-voli-vjezbati-i-obozava-jesti/2087980.aspx">
+<div class="img-holder">
+<img alt="Mo&#x17E;da zvu&#x10D;i nevjerojatno, ali Emily Ratajkowski ne voli vje&#x17E;bati i obo&#x17E;ava jesti" src="https://ip.index.hr/remote/indexnew.s3.index.hr/emily__2__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Možda zvuči nevjerojatno, ali Emily Ratajkowski ne voli vježbati i obožava jesti</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/poznata-fitness-influencerica-objavom-o-ugljikohidratima-izazvala-pravu-raspravu/2087876.aspx">
+<div class="img-holder">
+<img alt="Poznata fitness influencerica objavom o ugljikohidratima izazvala pravu raspravu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/images2/KAYLAITSINESFIT1607.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Poznata fitness influencerica objavom o ugljikohidratima izazvala pravu raspravu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/marko-grubnic-pokazao-sto-je-njegovom-tijelu-ucinio-ples-sa-zvijezdama/2087957.aspx">
+<div class="img-holder">
+<img alt="Marko Grubni&#x107; pokazao &#x161;to je njegovom tijelu u&#x10D;inio Ples sa zvijezdama" src="https://ip.index.hr/remote/indexnew.s3.index.hr/marko__7__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Marko Grubnić pokazao što je njegovom tijelu učinio Ples sa zvijezdama</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/ljudi-su-poludjeli-za-mediteranskom-dijetom-evo-sto-je-dozvoljeno-jesti/2087889.aspx">
+<div class="img-holder">
+<img alt="Ljudi su poludjeli za mediteranskom dijetom, evo &#x161;to je dozvoljeno jesti" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dijeta__13__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ljudi su poludjeli za mediteranskom dijetom, evo što je dozvoljeno jesti</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="right-part">
+<div class="cube-holder-oglasi main-content-bg">
+<a href="http://www.index.hr/oglasi/" class="logo">
+<div class="logo-img"></div>
+</a>
+<form class="form-oglasi-search">
+<input type="text" placeholder="Upišite pojam" />
+<button class="btn-submit" type="submit"><i class="index-magnifier"></i></button>
+</form>
+<ul class="menu clearfix">
+<li>
+<a class="osobni-automobili" href="http://www.index.hr/oglasi/osobni-automobili/gid/27">
+<div class="count-container">
+<span class="title">Osobni <br />automobili</span>
+<span class="oglasi-count">41627</span>
+</div>
+</a>
+</li>
+<li>
+<a class="nekretnine" href="https://www.index.hr/oglasi/nekretnine/gid/2">
+<div class="count-container">
+<span class="title">Nekretnine</span>
+<span class="oglasi-count">117868</span>
+</div>
+</a>
+</li>
+</ul>
+<ul class="latest">
+<li class="">
+<a href="https://www.index.hr/oglasi/kombi-prijevoz-selidbe-transporti/oid/1773037" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Kombi prijevoz-Selidbe-Transporti" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773037/20190524142213-240520192300058904.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Kombi prijevoz-Selidbe-Transporti</h3>
+<div class="price oglasi-bg">0,27 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/vw-golf-v-1-9-tdi/oid/1773033" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="VW Golf V 1.9 TDI" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773033/7AE37472-10B5-4B21-B6D5-286DEDAC5B8E-240520192249059234.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>VW Golf V 1.9 TDI</h3>
+<div class="price oglasi-bg">4.600,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/ford-focus-1-8-tdci/oid/1773031" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Ford Focus 1.8 TDCI" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773031/IMG-20190419-WA0003-240520192248486910.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Ford Focus 1.8 TDCI</h3>
+<div class="price oglasi-bg">6.000,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/alfa-romeo-147-1-9jtd-5-vrata-2003g-reg-07-11-19-1-300e/oid/1773030" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Alfa Romeo 147 1.9jtd 5.vrata 2003g,reg.07.11.19 1.300E" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773030/IMG20190524194420-240520192248066710.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Alfa Romeo 147 1.9jtd 5.vrata 2003g,reg.07.11.19 1.300E</h3>
+<div class="price oglasi-bg">1.300,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="cube-plus-holder cube-holder-video dark-content-bg">
+<a href="/video" class="logo">
+<div class="logo-img"></div>
+</a>
+<div class="first-news">
+<a href="/video/jeo-je-drvene-strugotine-kako-bi-prezivio-staljinov-gulag/1841" class="video-text-hover scale-img-hover">
+<div class="img-holder">
+<img class="img-responsive" alt="Jeo je drvene strugotine kako bi pre&#x17E;ivio Staljinov gulag" src="https://ip.index.hr/remote/indexnew.s3.index.hr/7l-k9lMaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvWkdJN01EQV8vYTNkMGE2NWM1OTZiMWNlYWIxMmU4NjY2MGVkNTViMjMuanBlZ5GTAs0C5ACBAAE.jpg?width=409&height=208&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<h3 class="title">Jeo je drvene strugotine kako bi pre&#x17E;ivio Staljinov gulag</h3>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/pogledajte-nastup-slijepog-pobjednika-supertalenta-na-ulici-u-sarajevu/1840">
+<div class="img-holder">
+<img alt="Pogledajte nastup slijepog pobjednika Supertalenta na ulici u Sarajevu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/supertalent glavna.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pogledajte nastup slijepog pobjednika Supertalenta na ulici u Sarajevu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/ovo-je-navodna-putinova-ljubavnica-koja-mu-je-rodila-vec-troje-djece/1839">
+<div class="img-holder">
+<img alt="Ovo je navodna Putinova ljubavnica koja mu je rodila ve&#x107; troje djece" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_01124366.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo je navodna Putinova ljubavnica koja mu je rodila ve&#x107; troje djece</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/pogledajte-kakav-je-prekrasan-prizor-docekao-ribare-u-rovinju/1838">
+<div class="img-holder">
+<img alt="Pogledajte kakav je prekrasan prizor do&#x10D;ekao ribare u Rovinju" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dupin.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pogledajte kakav je prekrasan prizor do&#x10D;ekao ribare u Rovinju</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/britanska-premijerka-se-rasplakala-nakon-najave-da-odlazi/1837">
+<div class="img-holder">
+<img alt="Britanska premijerka se rasplakala nakon najave da odlazi" src="https://ip.index.hr/remote/indexnew.s3.index.hr/may__5__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Britanska premijerka se rasplakala nakon najave da odlazi</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder cube-holder-lajk main-content-bg">
+<a href="http://www.index.hr/lajk/" class="logo">
+<div class="logo-img"></div>
+</a>
+<div class="first-news">
+<a href="http://www.index.hr/lajk/poster/215110/policija-je-u-potkrovlju-pronasla-zenu-koja-je-bila-zakljucana-vise-od-20-godina-otkrili-su-njenu-strasnu-pricu" class="lajkhr-text-hover scale-img-hover">
+<div class="img-holder">
+<img class="img-responsive" alt="Policija je u potkrovlju prona&#x161;la &#x17E;enu koja je bila zaklju&#x10D;ana vi&#x161;e od 20 godina, otkrili su njenu stra&#x161;nu pri&#x10D;u" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkd/800/5a2fa555-d4fb-471e-b12e-106ca98eac65.jpeg?width=409&height=208&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="title">Policija je u potkrovlju prona&#x161;la &#x17E;enu koja je bila zaklju&#x10D;ana vi&#x161;e od 20 godina, otkrili su njenu stra&#x161;nu pri&#x10D;u</h3>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215133/likovi-iz-serije-igra-prijestolja-izgledali-bi-drugacije-da-se-njihov-izgled-temeljio-na-tekstu-iz-knjige">
+<div class="img-holder">
+<img alt="Likovi iz serije &quot;Igra prijestolja&quot; izgledali bi druga&#x10D;ije da se njihov izgled temeljio na tekstu iz knjige" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/68bda747-d6f4-40c2-a872-018759b461d1.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Likovi iz serije &quot;Igra prijestolja&quot; izgledali bi druga&#x10D;ije da se njihov izgled temeljio na tekstu iz knjige</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215135/ove-slike-pokazuju-kako-su-se-promijenile-sobe-osoba-koje-su-pobijedile-depresiju">
+<div class="img-holder">
+<img alt="Ove slike pokazuju kako su se promijenile sobe osoba koje su pobijedile depresiju" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/f1eb896e-6776-4bbf-8b32-0cd6836ad890.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ove slike pokazuju kako su se promijenile sobe osoba koje su pobijedile depresiju</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215134/pastor-je-zamolio-mladenku-da-se-na-trenutak-makne-a-onda-se-mladozenja-obratio-njenoj-sestri">
+<div class="img-holder">
+<img alt="Pastor je zamolio mladenku da se na trenutak makne, a onda se mlado&#x17E;enja obratio njenoj sestri" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/520420b2-a5ac-4ade-a27a-98fa9beb9082.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pastor je zamolio mladenku da se na trenutak makne, a onda se mlado&#x17E;enja obratio njenoj sestri</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215132/snalazljivi-radnik-pokazao-je-svojim-sefovima-i-kolegama-kako-na-jednostavan-nacin-cisti-okrugli-stol">
+<div class="img-holder">
+<img alt="Snala&#x17E;ljivi radnik pokazao je svojim &#x161;efovima i kolegama kako na jednostavan na&#x10D;in &#x10D;isti okrugli stol" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/1aac92ef-89e3-4fc4-a458-81a04e1693b9.gif?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Snala&#x17E;ljivi radnik pokazao je svojim &#x161;efovima i kolegama kako na jednostavan na&#x10D;in &#x10D;isti okrugli stol</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div> </div>
+</div>
+
+<div id='DB5' style="text-align:center; padding-bottom:50px">
+<script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/21703950087/DB5', [[970, 250], [728, 90], [970, 90], [1, 1]], 'DB5').addService(googletag.pubads());
+            googletag.display('DB5');
+        });
+    </script>
+</div>
+</div>
+</div>
+<div class="plus-categories secondary-content-bg media-1024">
+<div class="plus-categories-holder main-container secondary-content-bg">
+<div class="plus-sign-big"></div>
+<div class="main-container">
+<div class="cubes flex">
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label rouge-bg rouge-bg-dark-hover" href="/rouge">Rouge</a>
+<a class="rouge-text-hover" href="/rouge/clanak/okrivite-horoskop-ovo-su-najgore-navike-svakog-znaka-kada-je-u-vezi/2088017.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Okrivite horoskop: Ovo su najgore navike svakog znaka kada je u vezi" src="https://ip.index.hr/remote/indexnew.s3.index.hr/51780443_139344190h428880_2077756863274901568_n.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Okrivite horoskop: Ovo su najgore navike svakog znaka kada je u vezi</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/rihanna-u-parizu-jos-jednom-pokazala-da-je-sama-sebi-najbolja-reklama/2087953.aspx">
+<div class="img-holder">
+<img alt="Rihanna u Parizu jo&#x161; jednom pokazala da je sama sebi najbolja reklama" src="https://ip.index.hr/remote/indexnew.s3.index.hr/GettyImages-1151257263g.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Rihanna u Parizu još jednom pokazala da je sama sebi najbolja reklama</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/nina-badric-spojila-nespojive-komade-i-sve-zacinila-torbicom-od-18-tisuca-kuna/2087927.aspx">
+<div class="img-holder">
+<img alt="Nina Badri&#x107; spojila nespojive komade i sve za&#x10D;inila torbicom od 18 tisu&#x107;a kuna" src="https://ip.index.hr/remote/indexnew.s3.index.hr/60603379_344789329561225_7556558240497916458_n (1).jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Nina Badrić spojila nespojive komade i sve začinila torbicom od 18 tisuća kuna</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/francuska-glumica-prekrsila-dress-code-i-ukrala-show-na-crvenom-tepihu-u-cannesu/2087990.aspx">
+<div class="img-holder">
+<img alt="Francuska glumica prekr&#x161;ila dress code i ukrala show na crvenom tepihu u Cannesu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_55214424g.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Francuska glumica prekršila dress code i ukrala show na crvenom tepihu u Cannesu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="rouge-text-hover scale-img-hover flex" href="/rouge/clanak/anita-dujic-pozirala-u-chic-proljetnoj-haljini-koju-obozavaju-sve-generacije/2087894.aspx">
+<div class="img-holder">
+<img alt="Anita Duji&#x107; pozirala u chic proljetnoj haljini koju obo&#x17E;avaju sve generacije" src="https://ip.index.hr/remote/indexnew.s3.index.hr/59912277_587828021706425_6023060549978515899_n (1).jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Anita Dujić pozirala u chic proljetnoj haljini koju obožavaju sve generacije</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label auto-bg auto-bg-dark-hover" href="/auto">Auto</a>
+<a class="auto-text-hover" href="/auto/clanak/opel-corsa-krece-na-struju/2087961.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Opel Corsa kre&#x107;e na struju" src="https://ip.index.hr/remote/indexnew.s3.index.hr/opel-corsa-e1200.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Opel Corsa kreće na struju</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/skoda-ima-elektricni-model-evo-koliko-moze/2087763.aspx">
+<div class="img-holder">
+<img alt="&#x160;koda ima elektri&#x10D;ni model, evo koliko mo&#x17E;e" src="https://ip.index.hr/remote/indexnew.s3.index.hr/SKoda-citigo-eIV_1201.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Škoda ima električni model, evo koliko može</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovaj-model-renault-nudi-samo-rusima/2087774.aspx">
+<div class="img-holder">
+<img alt="Ovaj model Renault nudi samo Rusima" src="https://ip.index.hr/remote/indexnew.s3.index.hr/rArkana1200.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovaj model Renault nudi samo Rusima</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovo-nitko-nije-ocekivao-sef-daimlera-za-upravljacem-bmwa/2087769.aspx">
+<div class="img-holder">
+<img alt="Ovo nitko nije o&#x10D;ekivao: &#x160;ef Daimlera za upravlja&#x10D;em BMW-a" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Dzetcherekl1200.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo nitko nije očekivao: Šef Daimlera za upravljačem BMW-a</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="auto-text-hover scale-img-hover flex" href="/auto/clanak/ovo-je-nova-skoda-superb/2087759.aspx">
+<div class="img-holder">
+<img alt="Ovo je nova &#x160;koda Superb!" src="https://ip.index.hr/remote/indexnew.s3.index.hr/SkodSuperbN1202.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo je nova Škoda Superb!</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cubes flex">
+<div class="cube-holder-oglasi main-content-bg">
+<a href="http://www.index.hr/oglasi/" class="logo">
+<div class="logo-img"></div>
+</a>
+<form class="form-oglasi-search">
+<input type="text" placeholder="Upišite pojam" />
+<button class="btn-submit" type="submit"><i class="index-magnifier"></i></button>
+</form>
+<ul class="menu clearfix">
+<li>
+<a class="osobni-automobili" href="http://www.index.hr/oglasi/osobni-automobili/gid/27">
+<div class="count-container">
+<span class="title">Osobni <br />automobili</span>
+<span class="oglasi-count">41627</span>
+</div>
+</a>
+</li>
+<li>
+<a class="nekretnine" href="https://www.index.hr/oglasi/nekretnine/gid/2">
+<div class="count-container">
+<span class="title">Nekretnine</span>
+<span class="oglasi-count">117868</span>
+</div>
+</a>
+</li>
+</ul>
+<ul class="latest">
+<li class="">
+<a href="https://www.index.hr/oglasi/kombi-prijevoz-selidbe-transporti/oid/1773037" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Kombi prijevoz-Selidbe-Transporti" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773037/20190524142213-240520192300058904.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Kombi prijevoz-Selidbe-Transporti</h3>
+<div class="price oglasi-bg">0,27 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/vw-golf-v-1-9-tdi/oid/1773033" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="VW Golf V 1.9 TDI" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773033/7AE37472-10B5-4B21-B6D5-286DEDAC5B8E-240520192249059234.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>VW Golf V 1.9 TDI</h3>
+<div class="price oglasi-bg">4.600,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/ford-focus-1-8-tdci/oid/1773031" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Ford Focus 1.8 TDCI" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773031/IMG-20190419-WA0003-240520192248486910.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Ford Focus 1.8 TDCI</h3>
+<div class="price oglasi-bg">6.000,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+<li class="">
+<a href="https://www.index.hr/oglasi/alfa-romeo-147-1-9jtd-5-vrata-2003g-reg-07-11-19-1-300e/oid/1773030" class="scale-img-hover flex">
+<div class="img-holder">
+<img alt="Alfa Romeo 147 1.9jtd 5.vrata 2003g,reg.07.11.19 1.300E" src="https://ip.index.hr/remote/www.index.hr/oglasi/userDocsImages/oglas/_2019/5/24/1773030/IMG20190524194420-240520192248066710.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h3 class="title" dot-dot>Alfa Romeo 147 1.9jtd 5.vrata 2003g,reg.07.11.19 1.300E</h3>
+<div class="price oglasi-bg">1.300,00 &#x20AC;</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="cube-plus-holder cube-holder-lajk main-content-bg">
+<a href="http://www.index.hr/lajk/" class="logo">
+<div class="logo-img"></div>
+</a>
+<div class="first-news">
+<a href="http://www.index.hr/lajk/poster/215110/policija-je-u-potkrovlju-pronasla-zenu-koja-je-bila-zakljucana-vise-od-20-godina-otkrili-su-njenu-strasnu-pricu" class="lajkhr-text-hover scale-img-hover">
+<div class="img-holder">
+<img class="img-responsive" alt="Policija je u potkrovlju prona&#x161;la &#x17E;enu koja je bila zaklju&#x10D;ana vi&#x161;e od 20 godina, otkrili su njenu stra&#x161;nu pri&#x10D;u" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkd/800/5a2fa555-d4fb-471e-b12e-106ca98eac65.jpeg?width=409&height=208&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<h3 class="title">Policija je u potkrovlju prona&#x161;la &#x17E;enu koja je bila zaklju&#x10D;ana vi&#x161;e od 20 godina, otkrili su njenu stra&#x161;nu pri&#x10D;u</h3>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215133/likovi-iz-serije-igra-prijestolja-izgledali-bi-drugacije-da-se-njihov-izgled-temeljio-na-tekstu-iz-knjige">
+<div class="img-holder">
+<img alt="Likovi iz serije &quot;Igra prijestolja&quot; izgledali bi druga&#x10D;ije da se njihov izgled temeljio na tekstu iz knjige" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/68bda747-d6f4-40c2-a872-018759b461d1.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Likovi iz serije &quot;Igra prijestolja&quot; izgledali bi druga&#x10D;ije da se njihov izgled temeljio na tekstu iz knjige</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215135/ove-slike-pokazuju-kako-su-se-promijenile-sobe-osoba-koje-su-pobijedile-depresiju">
+<div class="img-holder">
+<img alt="Ove slike pokazuju kako su se promijenile sobe osoba koje su pobijedile depresiju" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/f1eb896e-6776-4bbf-8b32-0cd6836ad890.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ove slike pokazuju kako su se promijenile sobe osoba koje su pobijedile depresiju</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215134/pastor-je-zamolio-mladenku-da-se-na-trenutak-makne-a-onda-se-mladozenja-obratio-njenoj-sestri">
+<div class="img-holder">
+<img alt="Pastor je zamolio mladenku da se na trenutak makne, a onda se mlado&#x17E;enja obratio njenoj sestri" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/520420b2-a5ac-4ade-a27a-98fa9beb9082.jpeg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pastor je zamolio mladenku da se na trenutak makne, a onda se mlado&#x17E;enja obratio njenoj sestri</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="lajkhr-text-hover scale-img-hover" href="http://www.index.hr/lajk/poster/215132/snalazljivi-radnik-pokazao-je-svojim-sefovima-i-kolegama-kako-na-jednostavan-nacin-cisti-okrugli-stol">
+<div class="img-holder">
+<img alt="Snala&#x17E;ljivi radnik pokazao je svojim &#x161;efovima i kolegama kako na jednostavan na&#x10D;in &#x10D;isti okrugli stol" src="https://ip.index.hr/remote/lajk.s3.index.hr/lajkg/800/1aac92ef-89e3-4fc4-a458-81a04e1693b9.gif?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Snala&#x17E;ljivi radnik pokazao je svojim &#x161;efovima i kolegama kako na jednostavan na&#x10D;in &#x10D;isti okrugli stol</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div> </div>
+<div class="cubes flex">
+<div class="cube-plus-holder plain">
+
+<div id='DF5-small' style="text-align:center">
+<script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/21703950087/DF5', [[300, 250], [300, 600], [1, 1]], 'DF5-small').addService(googletag.pubads()).setTargeting('screen-size', 'small');
+            googletag.display('DF5-small');
+        });
+    </script>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label mame-bg mame-bg-dark-hover" href="/mame">Mame</a>
+<a class="mame-text-hover" href="/mame/clanak/suprugu-poznatog-kosarkasa-upozorili-kontroliraj-koliko-ti-dijete-jede/2087970.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Suprugu poznatog ko&#x161;arka&#x161;a upozorili: &quot;Kontroliraj koliko ti dijete jede&quot;" src="https://ip.index.hr/remote/indexnew.s3.index.hr/ayesha.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Suprugu poznatog košarkaša upozorili: "Kontroliraj koliko ti dijete jede"</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/kim-kardashian-na-udaru-trolova-zbog-bebe-psalma-koji-spava-u-kreveticu/2087947.aspx">
+<div class="img-holder">
+<img alt="Kim Kardashian na udaru trolova zbog bebe Psalma koji spava u kreveti&#x107;u" src="https://ip.index.hr/remote/indexnew.s3.index.hr/psalm.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Kim Kardashian na udaru trolova zbog bebe Psalma koji spava u krevetiću</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/petra-nizetic-sinu-je-dala-hrvatsko-ime/2087867.aspx">
+<div class="img-holder">
+<img alt="Petra Ni&#x17E;eti&#x107; sinu je dala hrvatsko ime" src="https://ip.index.hr/remote/indexnew.s3.index.hr/petra_nizetic.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Petra Nižetić sinu je dala hrvatsko ime</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/roditelji-milenijalci-djecu-ne-poticu-dovoljno-na-igru-potvrdilo-istrazivanje/2087955.aspx">
+<div class="img-holder">
+<img alt="Roditelji milenijalci djecu ne poti&#x10D;u dovoljno na igru, potvrdilo istra&#x17E;ivanje" src="https://ip.index.hr/remote/indexnew.s3.index.hr/igra.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Roditelji milenijalci djecu ne potiču dovoljno na igru, potvrdilo istraživanje</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="mame-text-hover scale-img-hover flex" href="/mame/clanak/princ-william-ima-presladak-nadimak-za-svoju-mezimicu-charlotte/2087606.aspx">
+<div class="img-holder">
+<img alt="Princ William ima presladak nadimak za svoju mezimicu Charlotte" src="https://ip.index.hr/remote/indexnew.s3.index.hr/charlotte__2__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Princ William ima presladak nadimak za svoju mezimicu Charlotte</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cubes flex">
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label ljubimci-bg ljubimci-bg-dark-hover" href="/ljubimci">Ljubimci</a>
+<a class="ljubimci-text-hover" href="/ljubimci/clanak/stenci-macici-i-sva-ostala-mladuncad-zivotinja-uvijek-izmame-osmijeh/2087806.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="&#x160;tenci, ma&#x10D;i&#x107;i i sva ostala mladun&#x10D;ad &#x17E;ivotinja uvijek izmame osmijeh" src="https://ip.index.hr/remote/indexnew.s3.index.hr/44961521_custom__1__.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Štenci, mačići i sva ostala mladunčad životinja uvijek izmame osmijeh</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/macka-je-ostavila-macica-u-tudjem-dvoristu-ocekivala-je-da-ce-joj-ljudi-pomoci/2087846.aspx">
+<div class="img-holder">
+<img alt="Ma&#x10D;ka je ostavila ma&#x10D;i&#x107;a u tu&#x111;em dvori&#x161;tu. O&#x10D;ekivala je da &#x107;e joj ljudi pomo&#x107;i" src="https://ip.index.hr/remote/indexnew.s3.index.hr/Untitled-1__86__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Mačka je ostavila mačića u tuđem dvorištu. Očekivala je da će joj ljudi pomoći</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/ogromna-doga-poslusala-naredbu-svoje-male-vlasnice-i-zacudila-svijet/2087933.aspx">
+<div class="img-holder">
+<img alt="Ogromna doga poslu&#x161;ala naredbu svoje male vlasnice i za&#x10D;udila svijet" src="https://ip.index.hr/remote/indexnew.s3.index.hr/doga101__1__.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ogromna doga poslušala naredbu svoje male vlasnice i začudila svijet</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/iako-je-to-mnogima-cudno-ne-vole-svi-psi-mazenje-a-ovi-znakovi-ukazuju-na-to/2087969.aspx">
+<div class="img-holder">
+<img alt="Iako je to mnogima &#x10D;udno, ne vole svi psi ma&#x17E;enje, a ovi znakovi ukazuju na to" src="https://ip.index.hr/remote/indexnew.s3.index.hr/petting__1__.png?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Iako je to mnogima čudno, ne vole svi psi maženje, a ovi znakovi ukazuju na to</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="ljubimci-text-hover scale-img-hover flex" href="/ljubimci/clanak/dubrovacki-azil-za-nezbrinute-zivotinje-bit-ce-najbolji-na-svijetu/2087843.aspx">
+<div class="img-holder">
+<img alt="Dubrova&#x10D;ki azil za nezbrinute &#x17E;ivotinje bit &#x107;e najbolji na svijetu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/120808340_custom.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Dubrovački azil za nezbrinute životinje bit će najbolji na svijetu</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="cube-plus-holder main-content-bg">
+<div class="scale-img-hover main-news-holder">
+<a class="label fit-bg fit-bg-dark-hover" href="/fit">Fit</a>
+<a class="fit-text-hover" href="/fit/clanak/lenny-kravitz-jednostavno-ne-stari-njegovi-trbusni-misici-su-nevjerojatni/2087906.aspx">
+<div class="img-holder">
+<img class="img-responsive" alt="Lenny Kravitz jednostavno ne stari, njegovi trbu&#x161;ni mi&#x161;i&#x107;i su nevjerojatni" src="https://ip.index.hr/remote/indexnew.s3.index.hr/lenny.jpg?width=448&height=233&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div class="title-holder">
+<h2 dot-dot class="title">Lenny Kravitz jednostavno ne stari, njegovi trbušni mišići su nevjerojatni</h2>
+</div>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/mozda-zvuci-nevjerojatno-ali-emily-ratajkowski-ne-voli-vjezbati-i-obozava-jesti/2087980.aspx">
+<div class="img-holder">
+<img alt="Mo&#x17E;da zvu&#x10D;i nevjerojatno, ali Emily Ratajkowski ne voli vje&#x17E;bati i obo&#x17E;ava jesti" src="https://ip.index.hr/remote/indexnew.s3.index.hr/emily__2__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Možda zvuči nevjerojatno, ali Emily Ratajkowski ne voli vježbati i obožava jesti</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/poznata-fitness-influencerica-objavom-o-ugljikohidratima-izazvala-pravu-raspravu/2087876.aspx">
+<div class="img-holder">
+<img alt="Poznata fitness influencerica objavom o ugljikohidratima izazvala pravu raspravu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/images2/KAYLAITSINESFIT1607.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Poznata fitness influencerica objavom o ugljikohidratima izazvala pravu raspravu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/marko-grubnic-pokazao-sto-je-njegovom-tijelu-ucinio-ples-sa-zvijezdama/2087957.aspx">
+<div class="img-holder">
+<img alt="Marko Grubni&#x107; pokazao &#x161;to je njegovom tijelu u&#x10D;inio Ples sa zvijezdama" src="https://ip.index.hr/remote/indexnew.s3.index.hr/marko__7__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Marko Grubnić pokazao što je njegovom tijelu učinio Ples sa zvijezdama</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="fit-text-hover scale-img-hover flex" href="/fit/clanak/ljudi-su-poludjeli-za-mediteranskom-dijetom-evo-sto-je-dozvoljeno-jesti/2087889.aspx">
+<div class="img-holder">
+<img alt="Ljudi su poludjeli za mediteranskom dijetom, evo &#x161;to je dozvoljeno jesti" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dijeta__13__.jpg?width=128&height=80&mode=crop&anchor=topcenter&scale=both" />
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ljudi su poludjeli za mediteranskom dijetom, evo što je dozvoljeno jesti</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex">
+<div class="cube-plus-holder cube-holder-video dark-content-bg">
+<a href="/video" class="logo">
+<div class="logo-img"></div>
+</a>
+<div class="flex">
+<div class="first-news">
+<a href="/video/jeo-je-drvene-strugotine-kako-bi-prezivio-staljinov-gulag/1841" class="video-text-hover scale-img-hover">
+<div class="img-holder">
+ <img class="img-responsive" alt="Jeo je drvene strugotine kako bi pre&#x17E;ivio Staljinov gulag" src="https://ip.index.hr/remote/indexnew.s3.index.hr/7l-k9lMaHR0cDovL29jZG4uZXUvaW1hZ2VzL3B1bHNjbXMvWkdJN01EQV8vYTNkMGE2NWM1OTZiMWNlYWIxMmU4NjY2MGVkNTViMjMuanBlZ5GTAs0C5ACBAAE.jpg?width=465&height=236&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<h3 class="title">Jeo je drvene strugotine kako bi pre&#x17E;ivio Staljinov gulag</h3>
+</a>
+</div>
+<div class="cube-plus-holder-content">
+<ul>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/pogledajte-nastup-slijepog-pobjednika-supertalenta-na-ulici-u-sarajevu/1840">
+<div class="img-holder">
+<img alt="Pogledajte nastup slijepog pobjednika Supertalenta na ulici u Sarajevu" src="https://ip.index.hr/remote/indexnew.s3.index.hr/supertalent glavna.png?width=105&height=65&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pogledajte nastup slijepog pobjednika Supertalenta na ulici u Sarajevu</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/ovo-je-navodna-putinova-ljubavnica-koja-mu-je-rodila-vec-troje-djece/1839">
+<div class="img-holder">
+<img alt="Ovo je navodna Putinova ljubavnica koja mu je rodila ve&#x107; troje djece" src="https://ip.index.hr/remote/indexnew.s3.index.hr/h_01124366.jpg?width=105&height=65&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Ovo je navodna Putinova ljubavnica koja mu je rodila ve&#x107; troje djece</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/pogledajte-kakav-je-prekrasan-prizor-docekao-ribare-u-rovinju/1838">
+<div class="img-holder">
+<img alt="Pogledajte kakav je prekrasan prizor do&#x10D;ekao ribare u Rovinju" src="https://ip.index.hr/remote/indexnew.s3.index.hr/dupin.png?width=105&height=65&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Pogledajte kakav je prekrasan prizor do&#x10D;ekao ribare u Rovinju</h3>
+</div>
+</a>
+</li>
+<li class="clearfix">
+<a class="video-text-hover scale-img-hover" href="/video/britanska-premijerka-se-rasplakala-nakon-najave-da-odlazi/1837">
+<div class="img-holder">
+<img alt="Britanska premijerka se rasplakala nakon najave da odlazi" src="https://ip.index.hr/remote/indexnew.s3.index.hr/may__5__.jpg?width=105&height=65&mode=crop&anchor=topcenter&scale=both" />
+<div class="article-icon">
+<i class="index-video-circle"></i>
+<div class="icon-bg video-bg"></div>
+</div>
+</div>
+<div dot-dot class="cube-plus-small-title-holder">
+<h3 class="title">Britanska premijerka se rasplakala nakon najave da odlazi</h3>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<footer class="main-footer main-container main-content-bg clearfix">
+<a class="logo" href="/"><img class="logo-img" src="/Content/img/logo/logo_footer_196x29.svg" /></a>
+<nav class="list-holder flex">
+<ul>
+<li class="heading">
+<a class="vijesti-text-hover" href="/vijesti">
+Vijesti
+</a>
+</li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/hrvatska/22.aspx">Hrvatska</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/zagreb/1553.aspx">Zagreb</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/regija/1540.aspx">Regija</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/eu/5040.aspx">EU</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/svijet/23.aspx">Svijet</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/znanost/1722.aspx">Znanost</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/crna-kronika/46.aspx">Crna kronika</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/komentari/1413.aspx">Komentari</a></li>
+<li><a class="vijesti-text-hover" href="/vijesti/rubrika/novac/1554.aspx">Novac</a></li>
+</ul>
+<ul>
+<li class="heading">
+<a class="sport-text-hover" href="/sport">
+Sport
+</a>
+</li>
+<li><a class="sport-text-hover" href="/sport/rubrika/nogomet/1638.aspx">Nogomet</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/kosarka/1639.aspx">Ko&#x161;arka</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/tenis/1640.aspx">Tenis</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/ostali-sportovi/1641.aspx">Ostali sportovi</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/regija/1692.aspx">Regija</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/komentari/1738.aspx">Komentari</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/borilacki-sportovi/1662.aspx">Borila&#x10D;ki sportovi</a></li>
+<li><a class="sport-text-hover" href="/sport/rubrika/esport/1731.aspx">E-Sport</a></li>
+</ul>
+<ul>
+<li class="heading">
+<a class="magazin-text-hover" href="/magazin">
+Magazin
+</a>
+</li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/tv-film/1525.aspx">TV &amp; Film</a></li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/glazba/1526.aspx">Glazba</a></li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/tech-gadget/1528.aspx">Tech &amp; Gadget</a></li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/lifestyle/1529.aspx">Lifestyle</a></li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/showbiz/1527.aspx">Showbiz</a></li>
+<li><a class="magazin-text-hover" href="/magazin/rubrika/zanimljivosti/1530.aspx">Zanimljivosti</a></li>
+</ul>
+<ul>
+<li class="heading">
+Plus
+</li>
+<li><a class="oglasi-text-hover" href="http://www.index.hr/oglasi/">Oglasi</a></li>
+<li><a class="video-text-hover" href="http://www.index.hr/oglasi/">Video</a></li>
+<li><a class="lajkhr-text-hover" href="http://www.index.hr/lajk/">Lajk.hr</a></li>
+<li><a class="main-text-hover" href="http://www.index.hr/indexforum/">Forum</a></li>
+<li><a class="rouge-text-hover" href="/rouge">Rouge</a></li>
+<li><a class="auto-text-hover" href="/auto">Auto</a></li>
+<li><a class="mame-text-hover" href="/mame">Mame</a></li>
+<li><a class="ljubimci-text-hover" href="/ljubimci">Ljubimci</a></li>
+<li><a class="fit-text-hover" href="/fit">Fit</a></li>
+</ul>
+<ul>
+<li class="heading">
+Info
+</li>
+<li><a class="main-text-hover" href="/info/tecaj">Te&#x10D;aj</a></li>
+<li><a class="main-text-hover" href="/info/tv">TV program</a></li>
+<li><a class="main-text-hover" href="/info/kino">Kino</a></li>
+<li><a class="main-text-hover" href="/info/vrijeme">Vrijeme</a></li>
+<li><a class="main-text-hover" href="/rss/info">RSS</a></li>
+</ul>
+<ul>
+<li class="heading">
+PRATITE NAS
+</li>
+<li>
+<a href="https://www.facebook.com/index.hr/" target="_blank" class="main-text-hover"><i class="facebook index-facebook"></i>Facebook</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCUp6H4ko32XqnV_6MOPunBA" target="_blank" class="main-text-hover"><i class="youtube index-youtube"></i>Youtube</a>
+</li>
+<li>
+<a href="https://twitter.com/indexhr" target="_blank" class="main-text-hover"><i class="twitter index-twitter"></i>Twitter</a>
+</li>
+<li><a href="/posaljite-pricu" class="main-text-hover">Pošaljite nam priču </a></li>
+<li><a href="/posaljite-pricu-foto-video" class="main-text-hover">Pošaljite nam foto/video</a></li>
+</ul>
+</nav>
+<ul class="impressum">
+<li><a href="/Content/docs/cjenik_oglasavanja.pdf">Reklamirajte se</a></li>
+<li><a href="/kontakt">Kontakt</a></li>
+<li><a href="/impressum">Impressum</a></li>
+<li><a href="/uvjeti-koristenja">Uvjeti korištenja</a></li>
+<li>
+© 2019 Index
+<div class="fb-like" data-href="https://www.facebook.com/index.hr/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+</li>
+</ul>
+</footer>
+<script>
+    function topFunction() {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    }
+</script>
+</footer>
+
+<script>
+        window.adocf = {};
+        window.adocf.useDOMContentLoaded = true;
+    </script>
+<script type="text/javascript" src="//hr.adocean.pl/files/js/ado.js"></script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018 */
+        if (typeof ado !== "object") { ado = {}; ado.config = ado.preview = ado.placement = ado.master = ado.slave = function () { }; }
+        ado.config({ mode: "new", xml: false, characterEncoding: true });
+        ado.preview({ enabled: true });
+    </script>
+
+<script type="text/javascript">
+    <!--    //--><![CDATA[//><!--
+        var pp_gemius_identifier = 'zIg6tjA0i62fiVCEQ9oifMQLXmG_ivsXKWAbvMmvRD..r7';
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function () { var x = window[i + '_pdata'] = window[i + '_pdata'] || []; x[x.length] = arguments; }; }; gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event'); (function (d, t) { try { var gt = d.createElement(t), s = d.getElementsByTagName(t)[0], l = 'http' + ((location.protocol == 'https:') ? 's' : ''); gt.setAttribute('async', 'async'); gt.setAttribute('defer', 'defer'); gt.src = l + '://hr.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt, s); } catch (e) { } })(document, 'script');
+        //--><!]]>
+    </script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    (function () {
+        window.dm = window.dm || { AjaxData: [] };
+        window.dm.AjaxEvent = function (et, d, ssid, ad) {
+            dm.AjaxData.push({ et: et, d: d, ssid: ssid, ad: ad });
+            window.DotMetricsObj && DotMetricsObj.onAjaxDataUpdate();
+        };
+        var d = document,
+            h = d.getElementsByTagName('head')[0],
+            s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = document.location.protocol + '//script.dotmetrics.net/door.js?id=3828';
+        h.appendChild(s);
+    }());
+    /* ]]> */
+</script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, MASTER: index_hr.Index.hr.desktop.Naslovnica */
+        ado.master({ id: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7', server: 'hr.adocean.pl' });
+    </script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Billboard Tandem */
+        ado.slave('adoceanhruajlfkrhua', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });</script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Billboard 1 */
+        ado.slave('adoceanhrshikfvduhq', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });
+    </script>
+<script type="text/javascript">
+            /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Billboard2 */
+            ado.slave('adoceanhrydffdpikok', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });</script>
+<script type="text/javascript">
+            /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Billboard3 */
+            ado.slave('adoceanhrvemlgmsonf', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });</script>
+<script type="text/javascript">
+            /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Billboard4 */
+            ado.slave('adoceanhroaclgkkici', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });
+        </script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Ticker */
+        ado.slave('adoceanhrplreimdufp', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });
+    </script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Wallpaper */
+        ado.slave('adoceanhrwiplhodgbo', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });
+    </script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Box1 */
+        ado.slave('adoceanhrpgkinwficz', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });</script>
+<script type="text/javascript">
+        /* (c)AdOcean 2003-2018, index_hr.Index.hr.desktop.Naslovnica.Box2 */
+        ado.slave('adoceanhrmhroqtpmbu', { myMaster: 'b0fwfOmw10FdVGbvB5MlBmGjPyuHFu8mBf.6ZGiKl.T.a7' });</script>
+<script>
+        var category = 'vijesti';
+
+        homeService.InitAll();
+    </script>
+<script>
+        // Google analytics tracking
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+
+        globalDirectives.InitAll();
+
+        layoutService.InitAll();
+    </script>
+</body>
+</html>
