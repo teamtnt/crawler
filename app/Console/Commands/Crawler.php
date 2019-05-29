@@ -46,7 +46,7 @@ class Crawler extends Command
         $frontierIterator = 0;
 
         $frontiers                    = [];
-        $maxNumberOfFrontierProcesses = 10;
+        $maxNumberOfFrontierProcesses = 20;
 
         do {
 

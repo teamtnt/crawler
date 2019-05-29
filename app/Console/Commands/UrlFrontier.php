@@ -54,8 +54,8 @@ class UrlFrontier extends Command
             $status = $this->fetch($url);
             $url    = $this->getUrlFromUrlDatabase();
             $this->markUrlAsDone($url, $status);
+            sleep();
         } while ($url);
-
     }
 
     public function fetch($url)
@@ -132,6 +132,9 @@ class UrlFrontier extends Command
         $count = count($domains);
         $this->info("\tSaving $count domains to Domain Feeder");
         foreach ($domains as $domain) {
+            if (!endsWith($domain, ".hr")) {
+                continue;
+            }
             try {
                 DomainFeeder::insert(["domain" => $domain]);
             } catch (Exception $e) {
@@ -212,5 +215,15 @@ class UrlFrontier extends Command
                     id INTEGER PRIMARY KEY,
                     url TEXT UNIQUE COLLATE nocase,
                     done INTEGER)");
+    }
+
+    public function endsWith($haystack, $needle)
+    {
+        $length = strlen($needle);
+        if ($length == 0) {
+            return true;
+        }
+
+        return (substr($haystack, -$length) === $needle);
     }
 }
