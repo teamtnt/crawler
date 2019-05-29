@@ -50,7 +50,7 @@ class UrlFrontier extends Command
         $this->createUrlDatabase();
 
         $counter = 0;
-        $maxUrls = 500;
+        $maxUrls = 20;
 
         $url = $this->domain;
 
@@ -60,7 +60,7 @@ class UrlFrontier extends Command
             $this->markUrlAsDone($url, $status);
             $counter++;
             //sleep(1);
-        } while ($url || $counter < $maxUrls);
+        } while ($url && $counter < $maxUrls);
     }
 
     public function fetch($url)
@@ -200,9 +200,15 @@ class UrlFrontier extends Command
 
     public function saveContentToDisk($content, $name)
     {
+        //if we want we can save the content to disk
+        return;
+        $name       = preg_replace('/[^a-zA-Z0-9_-]+/', '-', strtolower($name))."dump";
         $filesystem = new Filesystem();
         $path       = storage_path('domains/'.$this->domain."/");
-        $filesystem->dumpFile($path.$name, $content);
+        try {
+            $filesystem->dumpFile($path.$name, $content);
+        } catch (Exception $e) {
+        }
     }
 
     public function createUrlDatabase()
