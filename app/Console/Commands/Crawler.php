@@ -64,7 +64,7 @@ class Crawler extends Command
             //if we already have maximum number of frontiers running we wait for them to complete
             if (count($frontiers) >= $maxNumberOfFrontierProcesses) {
                 $this->info("Maximal number of frontiers are running, waiting for some to complete");
-                sleep(1);
+                sleep(3);
                 continue;
             }
 
@@ -86,7 +86,6 @@ class Crawler extends Command
                 $frontiers[$frontierIterator]->start();
                 $frontierIterator++;
             }
-
             sleep(1);
         } while (true);
 
