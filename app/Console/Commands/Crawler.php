@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\DomainFeeder;
 use DB;
+use Exception;
 use Illuminate\Console\Command;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
@@ -48,7 +49,7 @@ class Crawler extends Command
         $frontierIterator = 0;
 
         $frontiers                    = [];
-        $maxNumberOfFrontierProcesses = 20;
+        $maxNumberOfFrontierProcesses = 150;
 
         do {
 
@@ -68,16 +69,22 @@ class Crawler extends Command
                 continue;
             }
 
-            DB::connection('domain_feeder')->transaction(function () use (&$domain) {
-                $domain = DomainFeeder::whereNull('assigned_to')->first();
-                if ($domain) {
-                    $domain->assigned_on = now();
-                    $domain->assigned_to = env('NODE_NAME');
-                    $domain->save();
-                } else {
-                    $this->info("No available domains found");
-                }
-            }, 3);
+            try {
+
+                DB::connection('domain_feeder')->transaction(function () use (&$domain) {
+                    $domain = DomainFeeder::whereNull('assigned_to')->first();
+                    if ($domain) {
+                        $domain->assigned_on = now();
+                        $domain->assigned_to = env('NODE_NAME');
+                        $domain->save();
+                    } else {
+                        $this->info("No available domains found");
+                    }
+                }, 3);
+            } catch (Exception $e) {
+                sleep(1);
+                continue;
+            }
 
             if ($domain) {
                 $this->info("Taking {$domain->domain} from domain feed");
@@ -86,7 +93,6 @@ class Crawler extends Command
                 $frontiers[$frontierIterator]->start();
                 $frontierIterator++;
             }
-            sleep(1);
         } while (true);
 
     }
