@@ -48,9 +48,27 @@ class UrlFrontier extends Command
         $this->domain = $this->argument('domain');
         $this->createUrlDatabase();
 
-        $response = $this->client->get($this->domain);
+        $url = $this->domain;
 
-        $body = (string) $response->getBody();
+        do {
+            $status = $this->fetch($url);
+            $url    = $this->getUrlFromUrlDatabase();
+            $this->markUrlAsDone($url, $status);
+        } while ($url);
+
+    }
+
+    public function fetch($url)
+    {
+        $this->warn("Scraping $url");
+
+        try {
+            $response = $this->client->get($url);
+            $body     = (string) $response->getBody();
+        } catch (Exception $e) {
+            //if we fail, we return with a error status code
+            return 2;
+        }
 
         $this->saveContentToDisk($body, $this->domain);
 
@@ -62,13 +80,19 @@ class UrlFrontier extends Command
         $externalLinksCount = count($externalLinks);
         $internalLinksCount = count($internalLinks);
 
-        $this->info("Found {$externalLinksCount} internal links and {$internalLinksCount} external links");
+        $this->info("\tFound {$internalLinksCount} internal links and {$externalLinksCount} external links");
 
-        $this->saveInternalLinksToUrlDatabase($internalLinks);
         $this->saveExternalLinksToDomainFeeder($externalLinks);
+        $this->saveInternalLinksToUrlDatabase($internalLinks);
+
+        return 1;
     }
+
     public function saveInternalLinksToUrlDatabase($links)
     {
+        $count = count($links);
+        $this->info("\tSaving $count links to URL Database");
+
         $statement = $this->urlDatabase->prepare("INSERT INTO urls ( 'url', 'done') values ( :url, 0)");
         foreach ($links as $link) {
             $statement->bindParam(':url', $link);
@@ -79,10 +103,34 @@ class UrlFrontier extends Command
             }
         }
     }
+
+    public function markUrlAsDone($url, $done = 1)
+    {
+        $updateStmt = $this->urlDatabase->prepare("UPDATE urls SET done = :done WHERE url = :url");
+        $updateStmt->bindValue(':done', $done);
+        $updateStmt->bindValue(':url', $url);
+        $updateStmt->execute();
+    }
+
+    public function getUrlFromUrlDatabase()
+    {
+
+        $selectStmt = $this->urlDatabase->prepare("SELECT * FROM urls WHERE done = 0");
+        $selectStmt->execute();
+
+        $url = $selectStmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($url) {
+            return $url['url'];
+        }
+
+        return null;
+    }
+
     public function saveExternalLinksToDomainFeeder($domains)
     {
         $count = count($domains);
-        $this->warn("Saving $count domains to Domain Feeder");
+        $this->info("\tSaving $count domains to Domain Feeder");
         foreach ($domains as $domain) {
             try {
                 DomainFeeder::insert(["domain" => $domain]);
