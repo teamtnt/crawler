@@ -43,6 +43,8 @@ class Crawler extends Command
     {
         $this->warn("\nStarting crawler on node: ".env('NODE_NAME'));
 
+        DB::connection('domain_feeder')->statement('PRAGMA journal_mode = wal;');
+
         $frontierIterator = 0;
 
         $frontiers                    = [];

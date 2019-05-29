@@ -49,14 +49,18 @@ class UrlFrontier extends Command
         $this->domain        = $this->argument('domain');
         $this->createUrlDatabase();
 
+        $counter = 0;
+        $maxUrls = 500;
+
         $url = $this->domain;
 
         do {
             $status = $this->fetch($url);
             $url    = $this->getUrlFromUrlDatabase();
             $this->markUrlAsDone($url, $status);
+            $counter++;
             sleep(1);
-        } while ($url);
+        } while ($url || $counter < $maxUrls);
     }
 
     public function fetch($url)
