@@ -22,7 +22,7 @@ class Crawler extends Command
      *
      * @var string
      */
-    protected $description = 'Takes a domain from the domain feed';
+    protected $description = 'Takes domains from the domain feed and assignes each of them to a url frontier';
 
     /**
      * Create a new command instance.
