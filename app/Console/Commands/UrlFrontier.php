@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\DomainFeeder;
+use Exception;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
+use Log;
 
 class UrlFrontier extends Command
 {
@@ -12,7 +15,7 @@ class UrlFrontier extends Command
      *
      * @var string
      */
-    protected $signature = 'url:frontier';
+    protected $signature = 'url:frontier {url}';
 
     /**
      * The console command description.
@@ -39,22 +42,47 @@ class UrlFrontier extends Command
      */
     public function handle()
     {
-        $this->url = $url = "www.carnet.hr";
-        $response  = $this->client->get($url);
-        $body      = (string) $response->getBody();
+        $this->url = $url = $this->argument('url');
 
-        if (!file_exists(storage_path($url))) {
-            mkdir(storage_path($url));
+        Log::info("Searching the url now: ".$url);
+        sleep(15);
+        return;
+
+        $response = $this->client->get($url);
+        $body     = (string) $response->getBody();
+
+        /*
+        if (!file_exists(storage_path("domains/".$url))) {
+        mkdir(storage_path("domains/".$url));
         }
 
-        file_put_contents(storage_path($url)."/index", $body);
-
+        file_put_contents(storage_path("domains/".$url)."/index", $body);
+         */
         $links = $this->extractLinks($body);
 
         $externalLinks = $this->getExternalLinks($links);
         $internalLinks = $this->getInternalLinks($links);
 
-        dd($externalLinks);
+        $externalLinksCount = count($externalLinks);
+        $internalLinksCount = count($internalLinks);
+
+        $this->info("Found {$externalLinksCount} internal links and {$internalLinksCount} external links");
+
+        $this->saveExternalLinksToDomainFeeder($externalLinks);
+    }
+
+    public function saveExternalLinksToDomainFeeder($domains)
+    {
+        $count = count($domains);
+        $this->warn("Saving $count domains to Domain Feeder");
+        foreach ($domains as $domain) {
+            try {
+                DomainFeeder::insert(["domain" => $domain]);
+            } catch (Exception $e) {
+                //$this->error($e->getMessage());
+                //the domain already exists in the feeder
+            }
+        }
     }
 
     public function extractLinks($html)
@@ -99,7 +127,8 @@ class UrlFrontier extends Command
         foreach ($links as $link) {
             $parsedLink = parse_url($link);
             if (isset($parsedLink['host']) && $parsedLink['host'] != $this->url) {
-                $externalLinks[$parsedLink['host']] = $parsedLink['host'];
+                $domain                 = $parsedLink['host'];
+                $externalLinks[$domain] = $domain;
             }
         }
         return array_unique(array_values($externalLinks));

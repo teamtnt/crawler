@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use App\DomainFeeder;
 use DB;
 use Illuminate\Console\Command;
+use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class Crawler extends Command
 {
@@ -41,9 +43,28 @@ class Crawler extends Command
     {
         $this->warn("\nStarting crawler on node: ".env('NODE_NAME'));
 
+        $frontierIterator = 0;
+
+        $frontiers                    = [];
+        $maxNumberOfFrontierProcesses = 10;
+
         do {
 
             $domain = null;
+
+            //checking if some of the url frontiers are complete
+            foreach ($frontiers as $key => $frontier) {
+                if (!$frontier->isRunning()) {
+                    unset($frontiers[$key]);
+                }
+            }
+
+            //if we already have maximum number of frontiers running we wait for them to complete
+            if (count($frontiers) >= $maxNumberOfFrontierProcesses) {
+                $this->info("Maximal number of frontiers are running, waiting for some to complete");
+                sleep(1);
+                continue;
+            }
 
             DB::connection('domain_feeder')->transaction(function () use (&$domain) {
                 $domain = DomainFeeder::whereNull('assigned_to')->first();
@@ -58,7 +79,12 @@ class Crawler extends Command
 
             if ($domain) {
                 $this->info("Taking {$domain->domain} from domain feed");
+
+                $frontiers[$frontierIterator] = new Process(['php', 'artisan', 'url:frontier', $domain->domain]);
+                $frontiers[$frontierIterator]->start();
+                $frontierIterator++;
             }
+
             sleep(1);
         } while (true);
 
