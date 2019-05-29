@@ -55,7 +55,7 @@ class UrlFrontier extends Command
             $status = $this->fetch($url);
             $url    = $this->getUrlFromUrlDatabase();
             $this->markUrlAsDone($url, $status);
-            sleep();
+            sleep(1);
         } while ($url);
     }
 
