@@ -7,6 +7,9 @@ use Exception;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use Log;
+use PDO;
+use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
+use Symfony\Component\Filesystem\Filesystem;
 
 class UrlFrontier extends Command
 {
@@ -15,14 +18,14 @@ class UrlFrontier extends Command
      *
      * @var string
      */
-    protected $signature = 'url:frontier {url}';
+    protected $signature = 'url:frontier {domain}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Fetching a single url';
+    protected $description = 'Fetching all urls for a single domain';
 
     /**
      * Create a new command instance.
@@ -42,22 +45,15 @@ class UrlFrontier extends Command
      */
     public function handle()
     {
-        $this->url = $url = $this->argument('url');
+        $this->domain = $this->argument('domain');
+        $this->createUrlDatabase();
 
-        Log::info("Searching the url now: ".$url);
-        sleep(15);
-        return;
+        $response = $this->client->get($this->domain);
 
-        $response = $this->client->get($url);
-        $body     = (string) $response->getBody();
+        $body = (string) $response->getBody();
 
-        /*
-        if (!file_exists(storage_path("domains/".$url))) {
-        mkdir(storage_path("domains/".$url));
-        }
+        $this->saveContentToDisk($body, $this->domain);
 
-        file_put_contents(storage_path("domains/".$url)."/index", $body);
-         */
         $links = $this->extractLinks($body);
 
         $externalLinks = $this->getExternalLinks($links);
@@ -68,9 +64,21 @@ class UrlFrontier extends Command
 
         $this->info("Found {$externalLinksCount} internal links and {$internalLinksCount} external links");
 
+        $this->saveInternalLinksToUrlDatabase($internalLinks);
         $this->saveExternalLinksToDomainFeeder($externalLinks);
     }
-
+    public function saveInternalLinksToUrlDatabase($links)
+    {
+        $statement = $this->urlDatabase->prepare("INSERT INTO urls ( 'url', 'done') values ( :url, 0)");
+        foreach ($links as $link) {
+            $statement->bindParam(':url', $link);
+            try {
+                $statement->execute();
+            } catch (Exception $e) {
+                //if the insert fails its a duplicate
+            }
+        }
+    }
     public function saveExternalLinksToDomainFeeder($domains)
     {
         $count = count($domains);
@@ -106,14 +114,14 @@ class UrlFrontier extends Command
 
         foreach ($links as $link) {
             $parsedLink = parse_url($link);
-            if (isset($parsedLink['host']) && $parsedLink['host'] != $this->url) {
+            if (isset($parsedLink['host']) && $parsedLink['host'] != $this->domain) {
                 //those are external links
             } else {
                 if (isset($parsedLink['host']) && isset($parsedLink['path']) && $parsedLink['path'] != "/") {
                     $internalLinks[] = $parsedLink['host'].$parsedLink['path'];
                 }
                 if (substr($link, 0, 1) === "/" && $link != "/") {
-                    $internalLinks[] = $this->url.$link;
+                    $internalLinks[] = $this->domain.$link;
                 }
             }
         }
@@ -126,11 +134,35 @@ class UrlFrontier extends Command
 
         foreach ($links as $link) {
             $parsedLink = parse_url($link);
-            if (isset($parsedLink['host']) && $parsedLink['host'] != $this->url) {
+            if (isset($parsedLink['host']) && $parsedLink['host'] != $this->domain) {
                 $domain                 = $parsedLink['host'];
                 $externalLinks[$domain] = $domain;
             }
         }
         return array_unique(array_values($externalLinks));
+    }
+
+    public function saveContentToDisk($content, $name)
+    {
+        $filesystem = new Filesystem();
+        $path       = storage_path('domains/'.$this->domain."/");
+        $filesystem->dumpFile($path.$name, $content);
+    }
+
+    public function createUrlDatabase()
+    {
+        //first we check if an .sqlite database for this domain exists
+        $path = storage_path('domains/'.$this->domain."/");
+
+        $filesystem = new Filesystem();
+        $filesystem->mkdir($path);
+
+        $this->urlDatabase = new PDO('sqlite:'.$path.$this->domain.".sqlite");
+        $this->urlDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $this->urlDatabase->exec("CREATE TABLE IF NOT EXISTS urls (
+                    id INTEGER PRIMARY KEY,
+                    url TEXT UNIQUE COLLATE nocase,
+                    done INTEGER)");
     }
 }
