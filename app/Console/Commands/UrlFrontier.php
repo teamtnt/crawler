@@ -59,7 +59,7 @@ class UrlFrontier extends Command
             $url    = $this->getUrlFromUrlDatabase();
             $this->markUrlAsDone($url, $status);
             $counter++;
-            sleep(1);
+            //sleep(1);
         } while ($url || $counter < $maxUrls);
     }
 
@@ -75,7 +75,7 @@ class UrlFrontier extends Command
             return 2;
         }
 
-        $this->saveContentToDisk($body, $this->domain);
+        $this->saveContentToDisk($body, $url);
 
         $links = $this->extractLinks($body);
 
