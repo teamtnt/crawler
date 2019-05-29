@@ -50,7 +50,7 @@ class UrlFrontier extends Command
         $this->createUrlDatabase();
 
         $counter = 0;
-        $maxUrls = 20;
+        $maxUrls = 50;
 
         $url = $this->domain;
 
@@ -98,10 +98,10 @@ class UrlFrontier extends Command
         $count = count($links);
         $this->info("\tSaving $count links to URL Database");
 
-        $statement = $this->urlDatabase->prepare("INSERT INTO urls ( 'url', 'done') values ( :url, 0)");
         foreach ($links as $link) {
-            $statement->bindParam(':url', $link);
             try {
+                $statement = $this->urlDatabase->prepare("INSERT INTO urls ( 'url', 'done') values ( :url, 0)");
+                $statement->bindParam(':url', $link);
                 $statement->execute();
             } catch (Exception $e) {
                 //if the insert fails its a duplicate
@@ -202,7 +202,7 @@ class UrlFrontier extends Command
     {
         //if we want we can save the content to disk
         return;
-        $name       = preg_replace('/[^a-zA-Z0-9_-]+/', '-', strtolower($name))."dump";
+        $name       = preg_replace('/[^a-zA-Z0-9_-]+/', '-', strtolower($name)).".dump";
         $filesystem = new Filesystem();
         $path       = storage_path('domains/'.$this->domain."/");
         try {
