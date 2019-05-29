@@ -45,7 +45,8 @@ class UrlFrontier extends Command
      */
     public function handle()
     {
-        $this->domain = $this->argument('domain');
+        $this->whiteLitedTLD = ".hr";
+        $this->domain        = $this->argument('domain');
         $this->createUrlDatabase();
 
         $url = $this->domain;
@@ -132,7 +133,7 @@ class UrlFrontier extends Command
         $count = count($domains);
         $this->info("\tSaving $count domains to Domain Feeder");
         foreach ($domains as $domain) {
-            if (!endsWith($domain, ".hr")) {
+            if (!$this->endsWith($domain, $this->whiteLitedTLD)) {
                 continue;
             }
             try {
