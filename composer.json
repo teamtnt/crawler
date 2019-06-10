@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "teamtnt/crawler",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Distributed Crawler Architecture",
     "keywords": [
-        "framework",
-        "laravel"
+        "crawler",
+        "tntsearch"
     ],
     "license": "MIT",
     "require": {
