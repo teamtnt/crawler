@@ -16,8 +16,6 @@ composer require teamtnt/crawler
 
 ## Configuration
 
-### Configuring Component
-
 Each instance needs to have an identifier. This can be added in `.env`
 ```php
 NODE_NAME="Instance 1"
